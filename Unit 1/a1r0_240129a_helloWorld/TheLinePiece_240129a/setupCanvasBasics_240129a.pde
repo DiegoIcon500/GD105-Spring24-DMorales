@@ -1,4 +1,4 @@
-// Kazimir Malevich, Black Square Blue Triangle
+// Kazimir Malevich, Black Square Blue Triangle, 1915
 
 void setup() {
   size(1024, 1024);

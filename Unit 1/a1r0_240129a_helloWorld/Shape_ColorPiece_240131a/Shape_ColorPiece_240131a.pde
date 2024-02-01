@@ -28,6 +28,8 @@
    stroke(#000000);
    strokeWeight(2);
    line(770, 358, 772, 1024);
-   
-   
+    
+   if (frameCount == 1) {
+    save("RedBalloonOutput.png");
+  }
  }

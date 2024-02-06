@@ -63,13 +63,17 @@
    triangle(1424, 190, 1423, -6, 1092, 190);
    noStroke();
    noFill();
+   strokeWeight(2); 
+   stroke(#563311);
    fill(#f0ff02);
    rect(951,348,138,196);
    square(1093, 238, 123);
    noFill();
-   rect(390,188,179,311);
+   fill(#000000);
+   rect(1047,188,42,74);
    noFill();
-   rect(590,388,445, 245);
+   fill(#065e08);
+   rect(1092,527,168, 202);
    
 
    

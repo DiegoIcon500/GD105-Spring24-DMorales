@@ -1,6 +1,7 @@
 // Ambition is just as dangerous as complacency.
 void setup() {
   size(1024, 1024); 
+  italic = loadFont("BellMTItalic-48.vlw");
 }
 
 void draw() {
@@ -13,6 +14,7 @@ void draw() {
   rotate(TAU * 0.129); 
   textSize(23); 
   fill(#fe4758);
+  textFont(italic);
   text("Ambition is just as dangerous as complacency", -69, 82);
   
   

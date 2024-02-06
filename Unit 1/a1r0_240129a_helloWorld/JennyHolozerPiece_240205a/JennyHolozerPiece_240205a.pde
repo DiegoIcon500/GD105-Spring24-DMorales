@@ -4,8 +4,10 @@ void setup() {
 }
 
 void draw() {
-  background(#8e3232);
-  text("Ambition is just as dangerous as complacency", 400, 450); 
+  background(#922a2a);
+  translate(width * 0.5, height * 0.5);
+  rotate(TAU * 0.122); 
+  text("Ambition is just as dangerous as complacency", -107, 108);
   
   
   

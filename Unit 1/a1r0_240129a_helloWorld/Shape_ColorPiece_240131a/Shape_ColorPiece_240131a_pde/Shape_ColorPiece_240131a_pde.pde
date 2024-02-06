@@ -22,7 +22,7 @@
    noFill();
    fill(#c82b01);
    triangle(285, 500, 285, 600, 360, 600);
-   rect(972, 655, 118, 360);
+   rect(972, 707, 118, 360);
    noFill();
    fill(#eb0cf9);
    rect(651, 600, 118, 425);
@@ -35,6 +35,42 @@
    rect(-3, 840, 640, 185);
    triangle(636, 1000, 830, 1001, 637, 840);
    noFill();
+   fill(#f88d10);
+   rect(width * -0.09, height * 0.08, 303, 747, 113);
+   noStroke();
+   square(-125, 540, 300); 
+   square(47, 602, 238);
+   noFill();
+   fill(#fb0000);
+   stroke(#563311);
+   strokeWeight(3);
+   square(-70, 355, 245);
+   noFill();
+   fill(#000000);
+   rect(361, 602, 288, 236);
+   noFill();
+   strokeWeight(2);
+   stroke(#000000);
+   quad(769, 461, 770, 385, 727, 469, 731, 373); 
+   noStroke();
+   fill(#000000);
+   rect(714,458,58,25);
+   noFill();
+   stroke(#563311);
+   strokeWeight(3);
+   fill(#97ff02);
+   rect(1090,188,449,911);
+   triangle(1424, 190, 1423, -6, 1092, 190);
+   noStroke();
+   noFill();
+   fill(#f0ff02);
+   rect(951,348,138,196);
+   square(1093, 238, 123);
+   noFill();
+   rect(390,188,179,311);
+   noFill();
+   rect(590,388,445, 245);
+   
 
    
     

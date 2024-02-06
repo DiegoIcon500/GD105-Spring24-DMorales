@@ -9,9 +9,10 @@ void draw() {
   strokeWeight(3);
   stroke(#fff645);
   rect(165, 350, 665, 495);
-  translate(width * 0.5, height * 0.5);
+  translate(width * 0.45, height * 0.45);
   rotate(TAU * 0.129); 
-  textSize(75);
+  textSize(23); 
+  fill(#fe4758);
   text("Ambition is just as dangerous as complacency", -69, 82);
   
   

@@ -10,13 +10,16 @@ void draw() {
   strokeWeight(5);
   stroke(#e510ed);
   
+  translate(width * -0.15, height * 0.05);
+  rotate(TAU * -0.030);
   rect(width * 0.05, 350, 665, 495);
   rect(width * 0.08, 300, 740, 595);
   rect(width * 0.10, 260, 860, 700);
   rect(width * 0.13, 216, 913, 785);
   
-  translate(width * 0.45, height * 0.45);
-  rotate(TAU * 0.130); 
+  
+  translate(width * 0.45, height * 0.42);
+  rotate(TAU * 0.123); 
   textSize(30); 
   fill(#0ffffc);
   text("Ambition is just as dangerous as compl4cency", -245, 220);

@@ -1,6 +1,9 @@
 // Ambition is just as dangerous as complacency.
+PFont CooperBlack;
+
 void setup() {
   size(1024, 1024);
+  CooperBlack = loadFont("CooperBlack-28.vlw");
 }
 
 void draw() {
@@ -32,6 +35,7 @@ void draw() {
   textSize(30);
   fill(#0ffffc);
   
+  
   //appearences can be deciving ;) - 
   text("Ambition is just as dangerous as compl4cency", -243, 189);
   text("Ambition is just as dangerous as compl4cency", -237, 210);
@@ -42,7 +46,7 @@ void draw() {
   text("Amb1tion is just as dangerous as Complac3ncy", -150, 320);
   text("Ambition is just as dangerous as compl4cency", -154, 308);
   
-  textSize(28);
+  textFont(CooperBlack);
   //rotate(frameCount * 0.01); 
   text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -162, 97);
 

@@ -32,7 +32,8 @@ void draw() {
   
   translate(width * 0.41, height * 0.35);
   rotate(TAU * 0.096);
-  textSize(30);
+  // make 30 instead of 29
+  textSize(29);
   fill(#0ffffc);
   
   

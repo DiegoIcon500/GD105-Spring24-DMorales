@@ -32,8 +32,8 @@ void draw() {
   
   translate(width * 0.41, height * 0.35);
   rotate(TAU * 0.096);
-  // make 30 instead of 29
-  textSize(29);
+  
+  textSize(30);
   fill(#0ffffc);
   
   
@@ -42,11 +42,15 @@ void draw() {
   text("Ambition is just as dangerous as compl4cency", -237, 210);
   text("Ambition is just as dangerous as compl4cency", -228, 201);
   //text("4mbiti0n is just as dangerous as Complacency", -143, 116);
+  noFill();
   
+  fill(#000000);
   textSize(20); 
   text("Amb1tion is just as dangerous as Complac3ncy", -150, 320);
   text("Ambition is just as dangerous as compl4cency", -154, 308);
+  noFill();
   
+  fill(#29f38d);
   textFont(CooperBlack);
   //rotate(frameCount * 0.01); 
   text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -162, 97);

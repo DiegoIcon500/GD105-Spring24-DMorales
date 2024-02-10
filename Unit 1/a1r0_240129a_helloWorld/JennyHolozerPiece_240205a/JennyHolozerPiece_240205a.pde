@@ -15,9 +15,9 @@ void draw() {
 
 //Setup the Glitch like effect with rectangles 
   
-  translate(width * -0.14, height * 0.05);
+  translate(width * -0.15, height * 0.05);
   rotate(TAU * -0.035);
-  rect(width * 0.05, 350, 665, 495);
+  rect(width * 0.06, 350, 665, 495);
   rect(width * 0.10, 260, 860, 700);
   noStroke();
   
@@ -30,7 +30,21 @@ void draw() {
   
   resetMatrix();
   
-  translate(width * 0.41, height * 0.35);
+  //Testing extra squares
+  translate(width * -0.14, height * 0.05);
+  noFill();
+  noStroke();
+  stroke(#ffffff);
+  strokeWeight(5);
+  rotate(TAU * -0.035);
+  rect(width * 0.31, 124, 665, 495);
+  rect(width * 0.25, 397, 860, 700);
+  noStroke();
+  //Testing extra squares
+  
+  resetMatrix();
+  
+  translate(width * 0.43, height * 0.35);
   rotate(TAU * 0.096);
   
   textSize(30);
@@ -54,7 +68,7 @@ void draw() {
   textFont(CooperBlack);
   //rotate(frameCount * 0.01); 
   text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -162, 97);
-
+  
 
 
 

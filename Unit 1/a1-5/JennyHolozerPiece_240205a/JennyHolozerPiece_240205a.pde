@@ -47,30 +47,31 @@ void draw() {
   translate(width * 0.43, height * 0.35);
   rotate(TAU * 0.096);
   
-  textSize(30);
+  textSize(24);
   fill(#0ffffc);
   
   
   //appearences can be deciving ;) - 
-  text("Ambition is just as dangerous as compl4cency", -243, 189);
-  text("Ambition is just as dangerous as compl4cency", -237, 210);
-  text("Ambition is just as dangerous as compl4cency", -228, 201);
+  text("Ambition is just as dangerous as compl4cency", -230, 197);
+  text("Ambition is just as dangerous as compl4cency", -218, 210);
+  text("Ambition is just as dangerous as compl4cency", -210, 201);
   //text("4mbiti0n is just as dangerous as Complacency", -143, 116);
   noFill();
   
   fill(#000000);
-  textSize(20); 
-  text("Amb1tion is just as dangerous as Complac3ncy", -150, 320);
-  text("Ambition is just as dangerous as compl4cency", -154, 308);
+  textSize(13); 
+  text("Amb1tion is just as dangerous as Complac3ncy", -73, 320);
+  text("Ambition is just as dangerous as compl4cency", -68, 308);
   noFill();
   
   fill(#29f38d);
   textFont(CooperBlack);
+  textSize(20);
   //rotate(frameCount * 0.01); 
-  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -162, 97);
-  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -262, 109);
-  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -362, 121);
-  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -462, 129);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -147, 58);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -162, 66);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -114, 77);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -146, 86);
   
 
 

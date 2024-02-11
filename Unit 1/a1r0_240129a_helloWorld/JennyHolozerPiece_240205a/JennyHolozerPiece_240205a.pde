@@ -22,8 +22,8 @@ void draw() {
   noStroke();
   
   stroke(#000000); 
-  rect(width * 0.08, 300, 740, 595);
-  rect(width * 0.13, 216, 913, 785);
+  rect(width * 0.08, 297, 740, 595);
+  rect(width * 0.13, 220, 913, 785);
   
   //reset the matrix in order to be able to adjust each 
   //individual commands rotation etc...
@@ -37,8 +37,8 @@ void draw() {
   stroke(#ffffff);
   strokeWeight(5);
   rotate(TAU * -0.035);
-  rect(width * 0.31, 124, 665, 495);
-  rect(width * 0.25, 397, 860, 700);
+  rect(width * 0.19, 118, 965, 1019);
+  rect(width * 0.15, 163, 950, 904);
   noStroke();
   //Testing extra squares
   
@@ -68,6 +68,9 @@ void draw() {
   textFont(CooperBlack);
   //rotate(frameCount * 0.01); 
   text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -162, 97);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -262, 107);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -362, 117);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -462, 127);
   
 
 

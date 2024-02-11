@@ -68,9 +68,9 @@ void draw() {
   textFont(CooperBlack);
   //rotate(frameCount * 0.01); 
   text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -162, 97);
-  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -262, 107);
-  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -362, 117);
-  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -462, 127);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -262, 109);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -362, 121);
+  text("Amb1ti0n 1s just as d4nger0us as complac3ncy", -462, 129);
   
 
 

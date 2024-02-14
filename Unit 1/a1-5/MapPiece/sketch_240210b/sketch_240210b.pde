@@ -76,7 +76,7 @@ void draw() {
   text("Bathroom", 144, -87); 
   textSize(18);
   rotate(1.62);
-  text("2nd", 415, -67); 
+  text("2nd", 410, -67); 
   resetMatrix();
   
   text("Bedroom 1", 188, 812);

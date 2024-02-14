@@ -37,11 +37,12 @@ void draw() {
   line(736, 164, 735, 287);
   line(305, 461, 385, 461);
   line(1085, 461, 1215, 461);
+  noStroke();
   
   // Text
   stroke(#000000);
   textFont(Arial);
-  translate(width * 0.500, height * 0.500);
+  translate(width * 0.192, height * 0.555);
   text("Bathroom", 300, 450);
   
   if (frameCount == 1) {

@@ -27,6 +27,7 @@ void draw() {
   noStroke();
   stroke(#000000);
   rect(735, 53, 663, 408, 0);
+  noStroke();
   
   //Doors
   strokeWeight(9);
@@ -40,10 +41,12 @@ void draw() {
   noStroke();
   
   // Text
-  stroke(#000000);
+  noFill();
+  translate(width * 0.154, height * 0.514);
+  rotate(-1.53);
+  textSize(60);
   textFont(Arial);
-  translate(width * 0.192, height * 0.555);
-  text("Bathroom", 300, 450);
+  text("Bathroom", 144, -87); 
   
   if (frameCount == 1) {
     save("MapOutput.png");

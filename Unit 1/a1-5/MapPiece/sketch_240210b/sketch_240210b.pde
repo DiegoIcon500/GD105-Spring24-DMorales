@@ -36,6 +36,9 @@ void draw() {
   stroke(#908e87);
   rect(504, 622, 14, 59, 3);
   rect(510, 468, 12, 21, 0);
+  rect(46, 469, 109, 58, 2);
+  stroke(#fdfdfd);
+  line(80, 527, 115, 527);
   noStroke();
   
   //Doors

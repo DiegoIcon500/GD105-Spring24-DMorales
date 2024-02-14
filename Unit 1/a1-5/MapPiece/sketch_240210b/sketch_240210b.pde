@@ -35,8 +35,9 @@ void draw() {
   line(248, 351, 248, 419); 
   line(728, 164, 728, 287);
   line(732, 165, 728, 286);
-  line(736, 164, 735, 287);
+  line(735, 164, 735, 287);
   line(305, 461, 385, 461);
+  line(535, 461, 635, 461);
   line(1085, 461, 1215, 461);
   noStroke();
   
@@ -47,6 +48,9 @@ void draw() {
   textSize(60);
   textFont(Arial);
   text("Bathroom", 144, -87); 
+  
+  text("Bedroom 1", 188, 812);
+  text("Kitchen", 188, 252);
   
   if (frameCount == 1) {
     save("MapOutput.png");

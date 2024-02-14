@@ -33,8 +33,9 @@ void draw() {
   noStroke();
   stroke(#000000);
   rect(40, 467, 458, 508, 5);
-  stroke(#908e87);
+  stroke(#9e9e9e);
   rect(504, 622, 14, 59, 3);
+  rect(635, 466, 36, 32, 3);
   rect(510, 468, 12, 21, 0);
   rect(46, 469, 109, 58, 2);
   stroke(#fdfdfd);
@@ -73,10 +74,15 @@ void draw() {
   textSize(60);
   textFont(Arial);
   text("Bathroom", 144, -87); 
+  textSize(18);
+  rotate(1.62);
+  text("2nd", 415, -67); 
+  resetMatrix();
   
   text("Bedroom 1", 188, 812);
   text("Kitchen", 188, 252);
-  
+  textSize(35);
+  text("Bedroom 2 / Living Room", -419, 117);
   if (frameCount == 1) {
     save("MapOutput.png");
   }

@@ -42,6 +42,10 @@ void draw() {
   line(80, 527, 115, 527);
   noStroke();
   
+  //Bedroom 3
+  stroke(#000000);
+  line(732, 460, 735, 977);
+  
   //Doors
   strokeWeight(9);
   stroke(#ffffff);
@@ -77,10 +81,15 @@ void draw() {
   textSize(18);
   rotate(1.62);
   text("2nd", 410, -67); 
+  
   resetMatrix();
   
+  translate(width * 0.154, height * 0.514);
+  rotate(-1.53);
+  textSize(45);
   text("Bedroom 1", 188, 812);
   text("Kitchen", 188, 252);
+  text("Bedroom 3", -280, 857);
   textSize(35);
   text("Bedroom 2 / Living Room", -419, 117);
   if (frameCount == 1) {

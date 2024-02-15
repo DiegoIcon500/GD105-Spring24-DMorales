@@ -47,8 +47,17 @@ void draw() {
   line(732, 460, 735, 977);
   fill(#000000);
   rect(1325, 485, 75, 155);
+  rect(746, 498, 275, 195, 4); 
   noFill();
-  rect(1325, 500, 80, 130);
+  noStroke();
+  stroke(#ffffff);
+  fill(#ffffff);
+  rect(1383, 512, 5, 100);
+  rect(1372, 542, 0, 32, 1);
+  rect(751, 507, 18, 66, 4);
+  rect(752, 607, 16, 75, 4);
+  rect(791, 495, 235, 205, 13);
+
   
   //Doors
   strokeWeight(9);

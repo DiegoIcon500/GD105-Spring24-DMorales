@@ -41,15 +41,28 @@ void draw() {
   stroke(#fdfdfd);
   line(80, 527, 115, 527);
   noStroke();
+  // bed 
+  fill(#000000);
+  rotate(1.57);
+  translate(-685, -1870);
+  rect(746, 498, 275, 195, 4); 
+  noFill();
+  fill(#ffffff);
+  rect(751, 507, 28, 79, 4);
+  rect(752, 609, 26, 75, 4);
+  rect(791, 490, 235, 205, 13);
+  resetMatrix();
+
   
   //Bedroom 3
   stroke(#000000);
   line(732, 460, 735, 977);
   fill(#000000);
-  rect(1325, 485, 75, 155);
+  rect(1325, 485, 64, 155);
   rect(746, 498, 275, 195, 4); 
   noFill();
   noStroke();
+  // bed
   stroke(#ffffff);
   fill(#ffffff);
   rect(1383, 512, 5, 100);

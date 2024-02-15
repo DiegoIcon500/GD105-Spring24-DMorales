@@ -45,6 +45,10 @@ void draw() {
   //Bedroom 3
   stroke(#000000);
   line(732, 460, 735, 977);
+  fill(#000000);
+  rect(1325, 485, 75, 155);
+  noFill();
+  rect(1325, 500, 80, 130);
   
   //Doors
   strokeWeight(9);
@@ -57,6 +61,7 @@ void draw() {
   line(535, 461, 635, 461);
   line(1085, 461, 1215, 461);
   stroke(#3d3c3c);
+  //Stairs
   line(535, 461, 535, 800);
   line(635, 461, 635, 800);
   line(635, 505, 535, 505);
@@ -69,6 +74,8 @@ void draw() {
   line(635, 715, 535, 715);
   line(635, 745, 535, 745);
   line(635, 775, 535, 775);
+  rect(585, 893, 53, 85); 
+  point(621, 946); 
   noStroke();
   
   // Text

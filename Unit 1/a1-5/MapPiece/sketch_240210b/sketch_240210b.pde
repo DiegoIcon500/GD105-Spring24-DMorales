@@ -13,21 +13,42 @@ void draw() {
   //Outter walls Base
   strokeWeight(8);
   stroke(#000000);
-  rect(35, 45, 1370, 935, 8);
+  rect(34, 45, 1370, 935, 8);
   
   //Inner walls
   noStroke();
   stroke(#000000);
   rect(width * 0.172, height * 0.050, 480, 411, 0); 
-  line(35, 462, 243, 461);
+  line(37, 462, 243, 461);
+  line(729, 461, 1399, 462);
   noStroke();
 
   
   //Bedroom 1
   noStroke();
   stroke(#000000);
-  rect(735, 53, 663, 408, 0);
   noStroke();
+  
+  // bed 
+  fill(#ffffff);
+  rotate(1.57);
+  translate(-685, -1870);
+  noFill();
+  fill(#000000);
+  rect(1377, 1381, 270, 204, 4);
+  noFill();
+  
+  resetMatrix();
+  
+  //sheet/ pillows
+  fill(#ffffff);
+  rotate(7.86);
+  translate(-149, -987);
+  rect(1070, 502, 31, 79, 4);
+  rect(1071, 609, 31, 79, 4);
+  rect(827, 493, 235, 205, 13);
+  resetMatrix();
+  noFill();
   
   //Bedroom 2
   noStroke();
@@ -120,7 +141,7 @@ void draw() {
   text("Kitchen", 188, 252);
   text("Bedroom 3", -280, 857);
   textSize(35);
-  text("Bedroom 2 / Living Room", -419, 117);
+  text("Bedroom 2 / Living Room", -422, 9);
   if (frameCount == 1) {
     save("MapOutput.png");
   }

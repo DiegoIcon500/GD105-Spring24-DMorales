@@ -2,7 +2,7 @@
 // Property Map, map based on my parents Mexico house
 PFont Arial;
 void setup() {
-  size(1444, 1000);
+  size(1444, 1000); 
   Arial = loadFont("Arial-BoldItalicMT-48.vlw");
 }
 

@@ -129,8 +129,17 @@ void draw() {
   line(1245, 250, 1385, 220);
 
   //Finished off the sun beams much better than how i started them ;/
-  
-  
+  noStroke();
+  noFill();
+  fill(#fd0000);
+  beginShape();
+  curveVertex(427,  80);
+  curveVertex(720,  360);
+  curveVertex(466,  165);
+  curveVertex(285,  291);
+  curveVertex(630, 659);
+  curveVertex(884, 508);
+  endShape();
   
   
   if (frameCount == 1) {

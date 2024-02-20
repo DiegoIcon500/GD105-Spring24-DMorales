@@ -130,12 +130,12 @@ void draw() {
 
   //Finished off the sun beams much better than how i started them ;/
   
-    //Legs
+  // heart Legs
   noFill();
   noStroke();
   fill(#000000);
-  rect(494, 562, 83, 600);
-  rect(1022, 500, 800, 300);
+  rect(495, 415, 85, 380);
+  rect(730, 455, 85, 345);
   
   //Heart
   noStroke();

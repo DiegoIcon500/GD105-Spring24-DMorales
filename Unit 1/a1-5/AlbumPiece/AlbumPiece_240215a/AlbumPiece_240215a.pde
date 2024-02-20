@@ -174,6 +174,32 @@ void draw() {
   quad(1061, 454, 1218, 423, 1299, 262, 1421, 296);
   quad(1154, 341, 1127, 294, 1212, 262, 1328, 559);
   
+  // Eye
+  noFill();
+  noStroke();
+  strokeWeight(5);
+  stroke(#000000);
+  fill(#ffffff);
+  ellipse(666, 434, 77, 135);
+  noStroke();
+  fill(#f90000);
+  circle(677, 500, 80);
+  noFill();
+  fill(#ffffff);
+  circle(667, 461, 64);
+  fill(#000000);
+  ellipse(675, 445, 35, 50);
+  
+  
+  strokeWeight(5);
+  stroke(#000000);
+  line(702, 466, 636, 485);
+  
+  noStroke();
+  fill(#f90000);
+  rotate(-0.01);
+  rect(618, 475, 105, 39);
+  
   if (frameCount == 1) {
     save("MapOutput.png");
   }

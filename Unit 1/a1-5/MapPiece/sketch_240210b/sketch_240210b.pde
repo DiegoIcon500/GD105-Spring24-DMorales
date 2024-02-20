@@ -142,6 +142,7 @@ void draw() {
   text("Bedroom 3", -280, 857);
   textSize(35);
   text("Bedroom 2 / Living Room", -422, 9);
+  
   if (frameCount == 1) {
     save("MapOutput.png");
   }

@@ -133,21 +133,21 @@ void draw() {
   noFill();
   fill(#fd0000);
   beginShape();
-  curveVertex(427,  80);
-  curveVertex(720,  360);
-  curveVertex(466,  165);
-  curveVertex(285,  291);
-  curveVertex(630, 659);
-  curveVertex(884, 508);
+  curveVertex(427,  127);
+  curveVertex(736,  374);
+  curveVertex(485,  207);
+  curveVertex(281,  297);
+  curveVertex(632, 660);
+  curveVertex(884, 511);
   endShape();
   
   beginShape();
   curveVertex(529,  845);
   curveVertex(1051,  360);
-  curveVertex(1010,  165);
-  curveVertex(716,  291);
-  curveVertex(630, 659);
-  curveVertex(884, 508);
+  curveVertex(1010,  225);
+  curveVertex(719,  305);
+  curveVertex(630, 660);
+  curveVertex(645, 592);
   endShape();
   
   

@@ -200,6 +200,13 @@ void draw() {
   rotate(-0.01);
   rect(618, 475, 105, 39);
   
+  //Legs
+  noFill();
+  noStroke();
+  fill(#000000);
+  rect(494, 562, 83, 600);
+  rect(1022, 500, 800, 300);
+  
   if (frameCount == 1) {
     save("MapOutput.png");
   }

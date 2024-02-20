@@ -9,7 +9,7 @@ void draw() {
   strokeWeight(10);
   stroke(#000000);
   noFill();
-  fill(#000000);
+  fill(#ff7e20);
   beginShape();
   curveVertex(4345,  2000);
   curveVertex(1440,  608);

@@ -150,6 +150,13 @@ void draw() {
   curveVertex(645, 592);
   endShape();
   
+  strokeCap(PROJECT);
+  strokeWeight(35);
+  stroke(#794722);
+  line(240, 263, 250, 558); 
+  line(1240, 389, 1250, 637); 
+  
+  
   
   if (frameCount == 1) {
     save("MapOutput.png");

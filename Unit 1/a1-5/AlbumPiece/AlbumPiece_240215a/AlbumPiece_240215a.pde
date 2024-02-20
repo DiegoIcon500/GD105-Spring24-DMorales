@@ -129,6 +129,8 @@ void draw() {
   line(1245, 250, 1385, 220);
 
   //Finished off the sun beams much better than how i started them ;/
+  
+  //Heart
   noStroke();
   noFill();
   fill(#fd0000);
@@ -150,13 +152,27 @@ void draw() {
   curveVertex(645, 592);
   endShape();
   
+  //tree trunks
+  
   strokeCap(PROJECT);
   strokeWeight(35);
   stroke(#794722);
   line(240, 263, 250, 558); 
   line(1240, 389, 1250, 637); 
   
+  //Leaves
+  noFill();
+  fill(#24fb1a);
+  noStroke();
+  strokeWeight(5);
+  stroke(#24fb1a);
+  quad(51, 267, 518, 386, 170, 202, 400, 497);
+  quad(122, 380, 385, 192, 170, 257, 394, 388);
+  quad(51, 212, 518, 386, 170, 202, 400, 497);
   
+  quad(1063, 400, 1218, 356, 1299, 262, 1400, 497);
+  quad(1061, 454, 1218, 423, 1299, 262, 1421, 296);
+  quad(1154, 341, 1127, 294, 1212, 262, 1328, 559);
   
   if (frameCount == 1) {
     save("MapOutput.png");

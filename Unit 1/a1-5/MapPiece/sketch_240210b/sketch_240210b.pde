@@ -1,5 +1,5 @@
 // The Map Piece
-// Property Map, map based on my parents Mexico house
+// Property Map, map based on my parents Mexico house, its probably not in the same context but its a map that pushes me to due to its emotional significance 
 PFont Arial;
 void setup() {
   size(1444, 1000); 

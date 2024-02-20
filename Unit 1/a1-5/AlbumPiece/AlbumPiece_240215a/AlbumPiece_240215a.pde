@@ -58,6 +58,33 @@ void draw() {
   fill(#fcf902);
   arc(1061, 250, 369, 265, -3.15, 0.00); 
   
+  noFill();
+  noStroke();
+  fill(#000000);
+  strokeWeight(3);
+  stroke(#000000);
+  // Sun --> B birds
+  ellipse(935, 194, 43, 26);
+  ellipse(965, 194, 43, 26);
+  
+  ellipse(965, 154, 43, 26);
+  ellipse(995, 154, 43, 26);
+  
+  ellipse(1060, 150 , 40, 25);
+  ellipse(1090, 150 , 40, 25);
+  // Sun --> W Birds
+  noStroke();
+  noFill();
+  fill(#fcf902);
+  ellipse(932, 198, 43, 26);
+  ellipse(966, 199, 43, 26);
+  
+  ellipse(965, 160, 49, 29);
+  ellipse(995, 158, 49, 26);
+  
+  ellipse(1060, 154 , 40, 25);
+  ellipse(1090, 154 , 40, 25);
+  
   //sun beams
   noStroke();
   stroke(#fd0013);
@@ -135,7 +162,12 @@ void draw() {
   noStroke();
   fill(#000000);
   rect(495, 415, 85, 380);
-  rect(730, 455, 85, 345);
+  rect(755, 455, 85, 345);
+  rect(468, 793, 140, 23, 20);
+  rect(727, 793, 140, 23, 20);
+  ellipse(537, 838, 146, 102);
+  ellipse(800, 838, 146, 102);
+
   
   //Heart
   noStroke();
@@ -158,6 +190,18 @@ void draw() {
   curveVertex(630, 660);
   curveVertex(645, 592);
   endShape();
+  
+  //Mouth
+  noFill();
+  fill(#000000);
+  ellipse(620, 570, 130, 65);
+  ellipse(550, 570, 10, 40);
+  ellipse(689, 570, 10, 40);
+  noFill();
+  fill(#fb0000);
+  ellipse(620, 580, 130, 65);
+
+  
   
   //tree trunks
   
@@ -193,7 +237,7 @@ void draw() {
   circle(677, 500, 80);
   noFill();
   fill(#ffffff);
-  circle(667, 461, 64);
+  circle(669, 461, 64);
   fill(#000000);
   ellipse(675, 445, 35, 50);
   

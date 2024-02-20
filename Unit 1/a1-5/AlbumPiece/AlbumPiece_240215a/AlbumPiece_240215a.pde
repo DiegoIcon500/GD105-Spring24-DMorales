@@ -1,4 +1,4 @@
-// Album piece
+// Album piece, Un Verano Sin Ti, Bad Bunny
 
 void setup() {
   size(1440, 1000);
@@ -42,6 +42,12 @@ void draw() {
   noStroke();
   fill(#1ff2ff);
   circle(710, 528, 332); 
+  
+  //Pink background
+  noStroke();
+  noFill();
+  fill(#f39cbd);
+  rect(0, 0, 1440, 250);
   
   
   

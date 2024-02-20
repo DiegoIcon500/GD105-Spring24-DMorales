@@ -49,6 +49,11 @@ void draw() {
   fill(#f39cbd);
   rect(0, 0, 1440, 250);
   
+  //test
+  stroke(#000000);
+  fill(#000000);
+  line(0, 200, 1440, 200);
+  
   
   
   

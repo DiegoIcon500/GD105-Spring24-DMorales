@@ -54,8 +54,13 @@ void draw() {
   noFill();
   noStroke();
   strokeWeight(3);
-  stroke(#000000);
-  
+  stroke(#ffa820);
+  fill(#fcf902);
+  arc(1061, 250, 369, 265, -3.15, 0.00); 
+  //sun beams
+  noStroke();
+  stroke(#fd0013);
+  line(875, 250, 797, 235); 
   
   
   

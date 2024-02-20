@@ -256,9 +256,9 @@ void draw() {
   noStroke();
   strokeWeight(2);
   stroke(#000000);
-  fill(#ffffff);
+  fill(#fdfa14);
   ellipseMode(CENTER);
-  ellipse(200, 900, 240, 200);
+  ellipse(200, 845, 50, 50);
   
   
   if (frameCount == 1) {

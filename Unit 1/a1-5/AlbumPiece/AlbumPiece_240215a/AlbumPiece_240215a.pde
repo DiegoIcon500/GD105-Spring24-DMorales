@@ -141,6 +141,15 @@ void draw() {
   curveVertex(884, 508);
   endShape();
   
+  beginShape();
+  curveVertex(529,  845);
+  curveVertex(1051,  360);
+  curveVertex(1010,  165);
+  curveVertex(716,  291);
+  curveVertex(630, 659);
+  curveVertex(884, 508);
+  endShape();
+  
   
   if (frameCount == 1) {
     save("MapOutput.png");

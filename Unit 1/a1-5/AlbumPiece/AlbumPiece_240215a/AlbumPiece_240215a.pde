@@ -60,7 +60,8 @@ void draw() {
   //sun beams
   noStroke();
   stroke(#fd0013);
-  line(875, 250, 797, 235); 
+  fill(#fd0013);
+  triangle(887, 248, 888, 233, 822, 237);
   
   
   

@@ -5,6 +5,10 @@ void setup() {
 }
 
 void draw() {
-  background(#ffffff);
+  background(#1ff2ff);
   
+  
+  if (frameCount == 1) {
+    save("MapOutput.png");
+  }
 }

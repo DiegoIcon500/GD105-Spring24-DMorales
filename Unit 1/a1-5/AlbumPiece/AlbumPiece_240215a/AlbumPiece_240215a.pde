@@ -251,6 +251,15 @@ void draw() {
   rotate(-0.01);
   rect(618, 475, 105, 39);
   
+  // Flowers
+  noFill();
+  noStroke();
+  strokeWeight(2);
+  stroke(#000000);
+  fill(#ffffff);
+  ellipseMode(CENTER);
+  ellipse(200, 900, 240, 200);
+  
   
   if (frameCount == 1) {
     save("MapOutput.png");

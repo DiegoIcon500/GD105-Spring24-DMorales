@@ -313,6 +313,6 @@ void draw() {
   
   
   if (frameCount == 1) {
-    save("MapOutputUnVernanoSinTi.png");
+    save("UnVernanoSinTi.png");
   }
 }

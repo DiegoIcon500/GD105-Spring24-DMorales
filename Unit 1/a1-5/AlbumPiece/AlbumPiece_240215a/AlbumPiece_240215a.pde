@@ -1,4 +1,4 @@
-// Album piece, Un Verano Sin Ti, Bad Bunny
+// Album piece, Un Verano Sin Ti, Bad Bunny(https://open.spotify.com/album/3RQQmkQEvNCY4prGKE6oc5?si=lNCTlpC-SRW9qyGnK0G3GQ)
 
 void setup() {
   size(1440, 1000);
@@ -255,13 +255,64 @@ void draw() {
   noFill();
   noStroke();
   strokeWeight(2);
-  stroke(#000000);
   fill(#fdfa14);
+  stroke(#21fd0a);
   ellipseMode(CENTER);
   ellipse(200, 845, 50, 50);
+  fill(#ee17cd);
+  ellipse(150, 845, 65, 46);
+  ellipse(200, 899, 41, 65);
+  ellipse(253, 845, 65, 46);
+  ellipse(200, 801, 41, 64);
+  
+  translate(-378, 46);
+  noFill();
+  noStroke();
+  strokeWeight(2);
+  fill(#fdfa14);
+  stroke(#21fd0a);
+  ellipseMode(CENTER);
+  ellipse(400, 845, 50, 50);
+  fill(#ee17cd);
+  ellipse(350, 845, 65, 46);
+  ellipse(400, 899, 41, 65);
+  ellipse(453, 845, 65, 46);
+  ellipse(400, 801, 41, 64);
+  
+  resetMatrix();
+  
+  translate(790, 0);
+  noFill();
+  noStroke();
+  strokeWeight(2);
+  fill(#fdfa14);
+  stroke(#21fd0a);
+  ellipseMode(CENTER);
+  ellipse(400, 845, 50, 50);
+  fill(#ee17cd);
+  ellipse(350, 845, 65, 46);
+  ellipse(400, 899, 41, 65);
+  ellipse(453, 845, 65, 46);
+  ellipse(400, 801, 41, 64);
+  
+  resetMatrix();
+  
+  translate(935, -95);
+  noFill();
+  noStroke();
+  strokeWeight(2);
+  fill(#fdfa14);
+  stroke(#21fd0a);
+  ellipseMode(CENTER);
+  ellipse(400, 845, 50, 50);
+  fill(#ee17cd);
+  ellipse(350, 845, 65, 46);
+  ellipse(400, 899, 41, 65);
+  ellipse(453, 845, 65, 46);
+  ellipse(400, 801, 41, 64);
   
   
   if (frameCount == 1) {
-    save("MapOutput.png");
+    save("MapOutputUnVernanoSinTi.png");
   }
 }

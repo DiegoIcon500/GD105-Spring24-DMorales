@@ -3,6 +3,8 @@
 PImage backdrop;
 PImage fcb;
 PImage mexico;
+PImage nets;
+PImage ironman;
 
 
 void setup(){

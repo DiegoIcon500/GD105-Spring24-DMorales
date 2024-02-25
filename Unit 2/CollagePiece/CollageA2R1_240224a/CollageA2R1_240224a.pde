@@ -1,7 +1,7 @@
 // Collage piece
 
 void setup(){
-  size(1440, 1000);
+  size(1200, 1000);
   
 }
 

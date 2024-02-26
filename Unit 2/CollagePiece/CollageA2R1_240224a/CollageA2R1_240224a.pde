@@ -6,17 +6,20 @@ PImage mexico;
 PImage nets;
 PImage ironman;
 PImage neymar;
-PImage connor; 
+PImage connor;
 PImage messi;
 PImage herobrine;
 PImage wraith;
 PImage dawn;
 PImage killua;
 
+// rotate(0.00);
+// 
 
-void setup(){
+
+void setup() {
   size(1200, 675);
-  
+
   backdrop = loadImage("CACW.png");
   fcb = loadImage("FCB.png");
   mexico = loadImage("MexicoFlag.png");
@@ -29,12 +32,20 @@ void setup(){
   wraith = loadImage("voidwalker-wraith.png");
   dawn = loadImage("UntilDawn.png");
   killua = loadImage("KilluaZ.png");
-  
-  
 }
 
-void draw(){
+void draw() {
   background(backdrop);
-  
-  
+
+  image(fcb, -82, 273);
+  resetMatrix();
+
+  scale(0.50);
+  image(nets, 500, 400);
+  resetMatrix();
+
+
+  if (frameCount == 1) {
+    save("Collage_a1r2.png");
+  }
 }

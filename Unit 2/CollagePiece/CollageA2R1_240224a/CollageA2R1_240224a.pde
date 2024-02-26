@@ -15,7 +15,7 @@ PImage killua;
 
 
 void setup(){
-  size(1200, 1000);
+  size(1200, 675);
   
   backdrop = loadImage("CACW.png");
   fcb = loadImage("FCB.png");
@@ -34,6 +34,7 @@ void setup(){
 }
 
 void draw(){
-  background(#ffffff);
+  background(backdrop);
+  
   
 }

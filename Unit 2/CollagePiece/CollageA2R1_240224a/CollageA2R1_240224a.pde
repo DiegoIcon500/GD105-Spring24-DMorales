@@ -26,7 +26,7 @@ void setup(){
   connor = loadImage("Connor.png");
   messi = loadImage("LeoMessi.png");
   herobrine = loadImage("herobrine.png");
-  warith = loadImage("voidwalker-wraith.png");
+  wraith = loadImage("voidwalker-wraith.png");
   dawn = loadImage("UntilDawn.png");
   killua = loadImage("KilluaZ.png");
   

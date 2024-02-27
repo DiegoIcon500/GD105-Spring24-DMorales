@@ -45,11 +45,13 @@ void draw() {
   
   // adding in images
   image(killua, 378, 135);
+  resetMatrix();
   
   image(ironman, 39, 267);
   resetMatrix();
   
   image(Gmod, -268, 129);
+  resetMatrix();
   
   image(connor, 784, 284);
   resetMatrix();
@@ -59,6 +61,13 @@ void draw() {
 
   image(fcb, -110, 325);
   resetMatrix();
+  
+  image(neymar, -47, 459);
+  resetMatrix();
+  
+  image(messi, 155, 400);
+  resetMatrix();
+  
 
   scale(0.48);
   image(nets3, 658, 970);

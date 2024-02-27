@@ -15,6 +15,7 @@ PImage wraith;
 PImage dawn;
 PImage killua;
 PImage Gmod;
+PImage NathanDrake;
 
 
 void setup() {
@@ -36,12 +37,14 @@ void setup() {
   dawn = loadImage("UntilDawn.png");
   killua = loadImage("KilluaZ.png");
   Gmod = loadImage("Gmod.png");
+  NathanDrake = loadImage("NathanDrake.png");
 }
 
 void draw() {
   background(backdrop);
   
   // adding in images
+  image(killua, 378, 135);
   
   image(ironman, 39, 267);
   resetMatrix();
@@ -51,7 +54,7 @@ void draw() {
   image(connor, 784, 284);
   resetMatrix();
   
-  image(wraith, 495, 250);
+  image(wraith, 575, 264);
   resetMatrix();
 
   image(fcb, -110, 325);

@@ -36,12 +36,23 @@ void setup() {
 
 void draw() {
   background(backdrop);
+  
+  // adding in images
+  
+  image(ironman, 39, 267);
+  resetMatrix();
+  
+  image(connor, 784, 284);
+  resetMatrix();
+  
+  image(wraith, 495, 250);
+  resetMatrix();
 
   image(fcb, -82, 273);
   resetMatrix();
 
-  scale(0.50);
-  image(nets, 500, 400);
+  scale(0.48);
+  image(nets, 658, 970);
   resetMatrix();
 
 

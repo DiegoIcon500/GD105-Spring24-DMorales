@@ -44,7 +44,7 @@ void draw() {
   background(backdrop);
   
   // adding in images
-  image(killua, 378, 135);
+  image(killua, 375, 135);
   resetMatrix();
   
   image(ironman, 39, 267);

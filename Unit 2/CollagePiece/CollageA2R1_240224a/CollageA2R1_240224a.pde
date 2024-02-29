@@ -53,7 +53,14 @@ void draw() {
   image(mexico, 115, 0);
   resetMatrix();
   
+  image(gojo, 273, -45);
+  resetMatrix();
+  
   image(erenJ, 875, 220);
+  resetMatrix();
+  
+  scale(0.51);
+  image(leviAK, 1265, -106);
   resetMatrix();
   
   image(killua, 375, 130);

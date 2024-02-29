@@ -58,6 +58,12 @@ void draw() {
   
   image(wraith, 575, 264);
   resetMatrix();
+  
+  fill(#ffffff);
+  rect(414, 399, 81, 21);
+  
+  image(herobrine, 360, 352);
+  resetMatrix();
 
   image(fcb, -110, 325);
   resetMatrix();

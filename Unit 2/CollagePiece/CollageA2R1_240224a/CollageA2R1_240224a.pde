@@ -74,13 +74,13 @@ void draw() {
   image(herobrine, 360, 352);
   resetMatrix();
 
-  image(fcb, -110, 325);
+  image(fcb, -110, 310);
   resetMatrix();
   
-  image(neymar, -47, 459);
+  image(neymar, -130, 459);
   resetMatrix();
   
-  image(messi, 155, 400);
+  image(messi, 161, 400);
   resetMatrix();
   
 

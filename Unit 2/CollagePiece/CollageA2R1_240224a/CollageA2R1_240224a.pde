@@ -18,6 +18,7 @@ PImage Gmod;
 PImage NathanDrake;
 PImage erenJ;
 PImage leviAK;
+PImage gojo;
 
 
 void setup() {
@@ -42,6 +43,7 @@ void setup() {
   NathanDrake = loadImage("NathanDrake.png");
   erenJ = loadImage("ErenJ.png");
   leviAK = loadImage("leviA.png");
+  gojo = loadImage("gojo.png");
 }
 
 void draw() {

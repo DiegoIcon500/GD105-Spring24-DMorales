@@ -44,13 +44,22 @@ void draw() {
   background(backdrop);
   
   // adding in images
-  image(killua, 375, 135);
+  image(mexico, 115, 0);
+  resetMatrix();
+  
+  image(killua, 375, 130);
+  resetMatrix();
+  
+  image(NathanDrake, 500, 415);
   resetMatrix();
   
   image(ironman, 39, 267);
   resetMatrix();
   
   image(Gmod, -268, 129);
+  resetMatrix();
+  
+  image(dawn, 453, 115);
   resetMatrix();
   
   image(connor, 784, 284);

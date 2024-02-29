@@ -42,8 +42,8 @@ void setup() {
   Gmod = loadImage("Gmod.png");
   NathanDrake = loadImage("NathanDrake.png");
   erenJ = loadImage("ErenJ.png");
-  leviAK = loadImage("leviA.png");
-  gojo = loadImage("gojo.png");
+  leviAK = loadImage("LeviA.png");
+  gojo = loadImage("Gojo.png");
 }
 
 void draw() {
@@ -51,6 +51,9 @@ void draw() {
   
   // adding in images
   image(mexico, 115, 0);
+  resetMatrix();
+  
+  image(erenJ, 875, 220);
   resetMatrix();
   
   image(killua, 375, 130);

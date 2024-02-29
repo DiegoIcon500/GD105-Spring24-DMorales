@@ -16,6 +16,8 @@ PImage dawn;
 PImage killua;
 PImage Gmod;
 PImage NathanDrake;
+PImage erenJ;
+PImage leviAK;
 
 
 void setup() {
@@ -38,6 +40,8 @@ void setup() {
   killua = loadImage("KilluaZ.png");
   Gmod = loadImage("Gmod.png");
   NathanDrake = loadImage("NathanDrake.png");
+  erenJ = loadImage("ErenJ.png");
+  leviAK = loadImage("leviA.png");
 }
 
 void draw() {

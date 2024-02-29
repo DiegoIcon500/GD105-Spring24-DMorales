@@ -1,6 +1,6 @@
 // Collage piece
 
-// setting variable
+// setting variables
 PImage backdrop;
 PImage fcb;
 PImage mexico;
@@ -49,7 +49,7 @@ void setup() {
 void draw() {
   background(backdrop);
   
-  // adding in images
+  // adding in images to canvas
   image(mexico, 115, 0);
   resetMatrix();
   
@@ -84,6 +84,7 @@ void draw() {
   image(wraith, 575, 264);
   resetMatrix();
   
+  //eyes for herobrine
   fill(#ffffff);
   rect(414, 399, 81, 21);
   

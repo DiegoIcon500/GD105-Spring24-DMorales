@@ -1,6 +1,9 @@
-// Collage piece
+// Collage piece, My aim is to create a piece that give an insight to 
+// some of the most impactful games/shows inj my life, obviously i can't put them all
+// into one piece without creating a much larger piece, but these were the ones that 
+// immedietly came to my mind
 
-// setting variables
+// setting names for my images
 PImage backdrop;
 PImage fcb;
 PImage mexico;
@@ -24,7 +27,7 @@ PImage gojo;
 void setup() {
   size(1200, 675);
 
-// tying variables to image files
+// loading in png's to the canvas
 
   backdrop = loadImage("CACW.png");
   fcb = loadImage("FCB.png");
@@ -49,7 +52,7 @@ void setup() {
 void draw() {
   background(backdrop);
   
-  // adding in images to canvas
+  // moving my images to the correct positions
   image(mexico, 115, 0);
   resetMatrix();
   

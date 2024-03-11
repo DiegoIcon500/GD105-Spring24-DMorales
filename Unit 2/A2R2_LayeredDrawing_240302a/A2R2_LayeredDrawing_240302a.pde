@@ -7,11 +7,11 @@ int topMargin;
 
 void setup() {
   size(1200, 1000); 
-  
+  background(255);
 }
 
 void draw() {
-  background(255);
+  
   stroke(#000000);
   strokeWeight(5);
   
@@ -19,5 +19,8 @@ void draw() {
   topMargin = height - 700;
   
   circle(leftMargin, topMargin, 450);
+  circle(leftMargin += 65, topMargin, 450);
+  circle(leftMargin += 130, topMargin, 450);
+  circle(leftMargin += 195, topMargin, 450);
   
 }

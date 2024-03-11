@@ -18,9 +18,14 @@ void draw() {
   leftMargin = 100;
   topMargin = height - 700;
   
+  
+  float rotationStep = TAU / 0;
+  
   circle(leftMargin, topMargin, 450);
   circle(leftMargin += 65, topMargin, 450);
   circle(leftMargin += 130, topMargin, 450);
   circle(leftMargin += 195, topMargin, 450);
+  
+ 
   
 }

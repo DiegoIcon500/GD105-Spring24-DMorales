@@ -59,7 +59,7 @@ void draw() {
   line(leftMargin += 450, 800, topMargin -= 500, 800);
   
  if (frameCount == 1) {
-   
+   save("layeredPiece");
  }
   
 }

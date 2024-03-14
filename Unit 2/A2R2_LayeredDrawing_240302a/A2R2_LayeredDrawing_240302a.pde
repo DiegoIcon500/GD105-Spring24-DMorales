@@ -1,6 +1,6 @@
 // Layered piece, if im being honest staarting off this project, i will simply be 
 // messing around with what i learn and hope to get my insiration as i mess around
-
+color Ruby, Lime, Sapphire, skyBlue, RGBkeyboard; 
 int leftMargin;
 int topMargin;
 
@@ -8,11 +8,18 @@ int topMargin;
 void setup() {
   size(1200, 1000); 
   background(255);
+  Sapphire = #3E49FF;
+  Ruby = #F02C32;
+  Lime = #19F530;
+  skyBlue = #12FFFD; 
+  
+  
 }
 
 void draw() {
+  color RGBkeyboard = color(random(255), random(255), random(255), random(255));
   
-  stroke(#000000);
+  stroke(Sapphire);
   strokeWeight(5);
   
   leftMargin = 100;
@@ -25,7 +32,17 @@ void draw() {
   circle(leftMargin += 65, topMargin, 450);
   circle(leftMargin += 130, topMargin, 450);
   circle(leftMargin += 195, topMargin, 450);
+  circle(leftMargin += 260, topMargin, 450);
   
- 
+  
+  
+  noStroke();
+  stroke(RGBkeyboard);
+  
+  line(leftMargin += 450, 800, topMargin -= 500, 800);
+  
+ if (frameCount == 1) {
+   
+ }
   
 }

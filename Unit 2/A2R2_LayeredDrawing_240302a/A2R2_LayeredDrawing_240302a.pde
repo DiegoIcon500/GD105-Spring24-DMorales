@@ -8,16 +8,10 @@ int rotate;
 void setup() {
   size(1200, 1000); 
   background(255);
+
   
-  boolean a = false;
-  if (!a) {
-      // slight text moment
-  stroke(lime);
-  rect(CENTER, TOP, 550, BOTTOM);
-  textSize(20);
-  text("YO i got master on Apex again", 115, 165);
-  }
-  
+
+ 
   
 // seting color values apart from rgb which is below
   sapphire = #3E49FF;
@@ -47,10 +41,17 @@ void draw() {
   circle(leftMargin += 260, topMargin, 450);
   
   // slight text moment
- // stroke(#000000);
- // rect(CENTER, TOP, 550, BOTTOM);
-//  textSize(20);
- // text("YO i got master on Apex again", 115, 165);
+ rect(CENTER, TOP, 550, BOTTOM);
+ 
+   boolean a = false;
+  if (!a) {
+      // slight text moment
+ 
+  textSize(35);
+  fill(lime);
+  text("YO i got master on Apex again", 115, 165);
+  noFill();
+  }
   
   // creating an rgb gamer moment for no reason 
   noStroke();

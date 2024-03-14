@@ -8,9 +8,6 @@ int rotate;
 void setup() {
   size(1200, 1000); 
   background(255);
-
-  
-
  
   
 // seting color values apart from rgb which is below

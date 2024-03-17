@@ -1,5 +1,7 @@
 // Layered piece, if im being honest staarting off this project, i will simply be 
 // messing around with what i learn and hope to get my insiration as i mess around
+//
+
 color ruby, lime, sapphire, skyBlue, rgbKeyboard, random; 
 int leftMargin;
 int topMargin;
@@ -38,7 +40,8 @@ void draw() {
   circle(leftMargin += 260, topMargin, 450);
   
   // slight text moment
- rect(CENTER, TOP, 550, BOTTOM);
+  fill(#ffffff);
+  rect(CENTER, TOP, 550, BOTTOM);
  
    boolean a = false;
   if (!a) {
@@ -46,7 +49,7 @@ void draw() {
  
   textSize(35);
   fill(lime);
-  text("YO i got master on Apex again", 115, 165);
+  text("YO! i got master on Apex again", 115, 165);
   noFill();
   }
   
@@ -57,7 +60,7 @@ void draw() {
   line(leftMargin += 450, 800, topMargin -= 500, 800);
   
  if (frameCount == 1) {
-   save("layeredPiece");
+   save("layeredPiece.png");
  }
   
 }

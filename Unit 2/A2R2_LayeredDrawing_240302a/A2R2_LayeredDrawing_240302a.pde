@@ -22,10 +22,12 @@ void setup() {
 }
 
 void draw() {
+  
+  // creating seizure line
   color rgbKeyboard = color(random(255), random(255), random(255), random(255));
   
   stroke(sapphire);
-  strokeWeight(5);
+  strokeWeight(15);
   
   leftMargin = 100;
   topMargin = height - 700;

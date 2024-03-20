@@ -5,10 +5,9 @@
 // declaring some variables
 
 color ruby, lime, sapphire, skyBlue, rgbKeyboard, random; 
-int 
 
 
-void setup() {
+void setup(){
   size(1200, 1000); 
   background(255);
   strokeCap(SQUARE);
@@ -53,7 +52,7 @@ void draw() {
   stroke(rgbKeyboard);
   strokeWeight(15);
   
-  line(leftMargin += 450, 800, topMargin -= 500, 800);
+  line(width += 450, 800, height -= 500, 800);
   
  if (frameCount == 1) {
    save("layeredPiece.png");

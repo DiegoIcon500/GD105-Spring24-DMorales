@@ -12,6 +12,7 @@ void setup(){
   background(255);
   strokeCap(SQUARE);
   loop();
+  frameRate(15);
   
 // seting color values apart from rgb which is below
   sapphire = #3E49FF;
@@ -20,7 +21,7 @@ void setup(){
   skyBlue = #12FFFD; 
   
 // setting value to my variables
-  randomCircle = random(width), random(height), 85; 
+// randomCircle = circle(random(width), random(height), 85); 
   
   
 }
@@ -34,8 +35,11 @@ void draw() {
   noStroke();
   stroke(ruby);
   strokeWeight(3);
-  circle(randomCircle);
-  
+  circle(random(width), random(height), 85);   
+  circle(random(width), random(height), 85);
+  circle(random(width), random(height), 85);
+  circle(random(width), random(height), 85);
+
   
  
    boolean a = false;
@@ -55,7 +59,7 @@ void draw() {
   
   line(width += 450, 800, height -= 500, 800);
   
- if (frameCount == 1) {
+ if (frameCount == 500) {
    save("layeredPiece.png");
  }
  

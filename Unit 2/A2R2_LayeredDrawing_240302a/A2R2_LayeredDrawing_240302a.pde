@@ -20,7 +20,7 @@ void setup(){
   skyBlue = #12FFFD; 
   
 // setting value to my variables
-  randomCircle = circle(random(width), random(height), 85);
+  randomCircle = random(width), random(height), 85; 
   
   
 }
@@ -34,7 +34,7 @@ void draw() {
   noStroke();
   stroke(ruby);
   strokeWeight(3);
-  
+  circle(randomCircle);
   
   
  
@@ -59,14 +59,5 @@ void draw() {
    save("layeredPiece.png");
  }
  
-void randomCircle(){
-  
-//Generating my circles :)
-
-  noStroke();
-  stroke(ruby);
-  strokeWeight(3);
-  
-}
   
 }

@@ -1,15 +1,17 @@
 // Layered piece, if im being honest staarting off this project, i will simply be 
 // messing around with what i learn and hope to get my insiration as i mess around
-//
+
+
+// declaring some variables
 
 color ruby, lime, sapphire, skyBlue, rgbKeyboard, random; 
-int leftMargin;
-int topMargin;
-int rotate;
+int 
+
 
 void setup() {
   size(1200, 1000); 
   background(255);
+  strokeCap(SQUARE);
  
   
 // seting color values apart from rgb which is below
@@ -23,27 +25,18 @@ void setup() {
 
 void draw() {
   
-  // creating seizure line
+  // creating seizure line color
   color rgbKeyboard = color(random(255), random(255), random(255), random(255));
   
-  stroke(sapphire);
-  strokeWeight(15);
   
-  leftMargin = 100;
-  topMargin = height - 700;
+// int values
+ 
   
+
+  noStroke();
+  stroke(ruby);
+  strokeWeight(3);
   
-//  float rotate = TAU / 0;
-  
-  circle(leftMargin, topMargin, 450);
-  circle(leftMargin += 65, topMargin, 450);
-  circle(leftMargin += 130, topMargin, 450);
-  circle(leftMargin += 195, topMargin, 450);
-  circle(leftMargin += 260, topMargin, 450);
-  
-  // slight text moment
-  fill(#ffffff);
-  rect(CENTER, TOP, 550, BOTTOM);
  
    boolean a = false;
   if (!a) {
@@ -51,13 +44,14 @@ void draw() {
  
   textSize(35);
   fill(lime);
-  text("YO! i got master on Apex again", 115, 165);
+  text("YO! i got master on Apex again", 95, 165);
   noFill();
   }
   
   // creating an rgb gamer moment for no reason 
   noStroke();
   stroke(rgbKeyboard);
+  strokeWeight(15);
   
   line(leftMargin += 450, 800, topMargin -= 500, 800);
   

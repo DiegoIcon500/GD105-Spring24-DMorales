@@ -23,6 +23,10 @@ void setup() {
 void draw() {
   stroke(rgbGamer);
   line(mouseX, mouseY, 100, 200);
+  
+  boolean a = false;
+  if (!a) {
+    
 
 
 

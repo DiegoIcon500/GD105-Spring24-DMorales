@@ -43,7 +43,7 @@ void draw() {
   ellipse(circleX, circleY, 25, 50);
 
 
-
+// uneccesary but wanted to use 
   boolean a = false;
   if (!a) {
     // slight text moment

@@ -23,14 +23,15 @@ void setup() {
 void draw() {
   stroke(rgbGamer);
   line(mouseX, mouseY, 100, 200);
-  
+
+//won't run until boolean is finished
   boolean a = false;
   if (!a) {
-    
 
 
 
-  if (frameCount == 450) {
-    save("mousePiece.png");
+
+  if (frameCount == 450){
+      save("mousePiece.png");
   }
 }

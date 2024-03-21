@@ -4,8 +4,8 @@
 
 // declaring some variables
 color ruby, lime, sapphire, skyBlue, rgbKeyboard, random;
-int circleX;
-int circleY;
+float circleX;
+float circleY;
 
 void setup() {
   size(1200, 1000);
@@ -21,8 +21,8 @@ void setup() {
 
   // setting value to my variables
   // randomCircle = circle(random(width), random(height), 85);
-  circleX = 500;
-  circleY = 300;
+  circleX = random(1000);
+  circleY = random(800);
 }
 
 void draw() {

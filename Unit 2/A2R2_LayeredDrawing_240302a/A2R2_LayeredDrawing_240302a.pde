@@ -36,7 +36,9 @@ void draw() {
   stroke(ruby);
   strokeWeight(3);
 
-  circleX = circleX + 1;
+  circleX = circleX + 2;
+  circleY = circleY - 3;
+  
   
   ellipse(circleX, circleY, 25, 50);
 
@@ -59,7 +61,7 @@ void draw() {
 
   line(width += 450, 800, height -= 500, 800);
 
-  if (frameCount == 500) {
+  if (frameCount == 15) {
     save("layeredPiece.png");
   }
 }

@@ -10,8 +10,8 @@ float circleY;
 void setup() {
   size(1200, 1000);
   strokeCap(SQUARE);
-  
-  //frameRate(15);
+  background(255);
+  frameRate(15);
 
   // seting color values apart from rgb which is below
   sapphire = #3E49FF;
@@ -26,7 +26,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  //background(255);
   
   // creating seizure line color
   color rgbKeyboard = color(random(255), random(255), random(255), random(255));

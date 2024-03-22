@@ -6,6 +6,7 @@
 color ruby, lime, sapphire, skyBlue, rgbKeyboard, random;
 float circleX;
 float circleY;
+float circleZ;
 
 void setup() {
   size(1200, 1000);
@@ -23,6 +24,7 @@ void setup() {
   // randomCircle = circle(random(width), random(height), 85);
   circleX = random(1000);
   circleY = random(800);
+  circleZ = random(200);
 }
 
 void draw() {
@@ -40,24 +42,25 @@ void draw() {
   circleY = circleY - 3;
   
   
-  ellipse(circleX, circleY, 25, 50);
+  
+  ellipse(circleX, circleY, circleZ, 50);
 
 
-// uneccesary but wanted to use 
+// uneccesary but wanted to use boolean
   boolean a = false;
   if (!a) {
     // slight text moment
 
     textSize(35);
     fill(lime);
-    text("YO! i got master on Apex again", 95, 165);
+    text("YO! i got masters on Apex again, the 2x fr", 95, 165);
     noFill();
   }
 
   // creating an rgb gamer moment for no reason
   noStroke();
   stroke(rgbKeyboard);
-  strokeWeight(15);
+  strokeWeight(35);
 
   line(width += 450, 800, height -= 500, 800);
 

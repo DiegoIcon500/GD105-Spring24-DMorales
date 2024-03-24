@@ -7,6 +7,9 @@ color ruby, lime, sapphire, skyBlue, rgbKeyboard, random;
 float circleX;
 float circleY;
 float circleZ;
+float circleX2;
+float circleY2;
+float circleZ2;
 float squareX;
 float squareY;
 float squareZ;
@@ -29,6 +32,9 @@ void setup() {
   circleX = random(1000);
   circleY = random(800);
   circleZ = random(200);
+  circleX2 = 300;
+  circleY2 = 500;
+  circleZ2 = 50;
   squareX = random(1000);
   squareY = random(800);
   squareZ = random(200);
@@ -47,14 +53,16 @@ void draw() {
 
   circleX = circleX + 2;
   circleY = circleY - 3;
+  circleX2 = circleX2 + random(-4, 4);
   squareX = squareX + 2;
   squareY = squareY - 2;
   squareZ = squareZ - 1;
-
   
+
   
   ellipse(circleX, circleY, circleZ, random(100));
   square(squareX, squareY, squareZ);
+  ellipse(circleX2, circleY2, circleZ2, 50);
   
 
 
@@ -77,6 +85,6 @@ void draw() {
   line(width += 450, 800, height -= 500, 800);
 
   if (frameCount == 15) {
-    save("layeredPiece.png");
+    save("layeredPiece.gif");
   }
 }

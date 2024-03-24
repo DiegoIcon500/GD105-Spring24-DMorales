@@ -13,6 +13,8 @@ float circleZ2;
 float squareX;
 float squareY;
 float squareZ;
+float lineX;
+float lineY;
 
 
 void setup() {
@@ -42,6 +44,9 @@ void setup() {
 
 void draw() {
   //background(255);
+  lineX = random(width);
+  lineY = random(height);
+  
   
   // creating seizure line color
   color rgbKeyboard = color(random(255), random(255), random(255), random(255));
@@ -63,6 +68,9 @@ void draw() {
   ellipse(circleX, circleY, circleZ, random(100));
   square(squareX, squareY, squareZ);
   ellipse(circleX2, circleY2, circleZ2, 50);
+  
+  stroke(135);
+  line(lineX, lineY, random(500), random(500));
   
 
 

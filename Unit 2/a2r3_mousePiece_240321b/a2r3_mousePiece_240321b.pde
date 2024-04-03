@@ -11,6 +11,7 @@ float topRight;
 
 void setup() {
   size(1200, 900);
+  background(255);
 
   //initializing colors
   ruby = #F00000;
@@ -21,12 +22,14 @@ void setup() {
 }
 
 void draw() {
+  //background(255);
   stroke(rgbGamer);
-  line(mouseX, mouseY, 100, 200);
+  circle(mouseX, mouseY, 100);
 
 //won't run until boolean is finished
   boolean a = false;
   if (!a) {
+  }
 
 
 

@@ -25,6 +25,9 @@ void draw() {
   //background(255);
   stroke(rgbGamer);
   circle(mouseX, mouseY, 100);
+  
+  strokeCap(SQUARE);
+  
 
 //won't run until boolean is finished
   boolean a = false;
@@ -33,7 +36,7 @@ void draw() {
 
 
 
-
+//saving
   if (frameCount == 450){
       save("mousePiece.png");
   }

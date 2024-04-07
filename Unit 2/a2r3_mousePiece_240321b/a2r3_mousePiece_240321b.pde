@@ -11,20 +11,25 @@ float topRight;
 
 void setup() {
   size(1200, 900);
-  background(255);
+  background(50);
 
   //initializing colors
   ruby = #F00000;
   turqouise = #00FACA;
-  rgbGamer = color(random(255), random(255), random(255), random(255));
+  //rgbGamer = color(random(255), random(255), random(255), random(255));
 
   //initializing words...
 }
 
 void draw() {
-  //background(255);
+  //background(50);
+  rgbGamer = color(random(255), random(255), random(255), random(255));
+
   stroke(rgbGamer);
-  circle(mouseX, mouseY, 100);
+  strokeWeight(5);
+  
+ // circle(mouseX, height-mouseY, 100);
+  line(pmouseX, pmouseY, mouseX, mouseY);
   
   strokeCap(SQUARE);
   

@@ -28,7 +28,7 @@ void draw() {
   
   noStroke();
   if (mousePressed == true) {
-    fill(255, 0, 0);
+    fill(ruby);
   } else {
     fill(0);
   }

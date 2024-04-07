@@ -22,22 +22,25 @@ void setup() {
 }
 
 void draw() {
-  //background(50);
+  //initallizing words
   rgbGamer = color(random(255), random(255), random(255), random(255));
+  
+  stroke(255);
+  if (mousePressed == true) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+  rect(width/2, 500, height/2, 500);
 
+  noStroke();
   stroke(rgbGamer);
   strokeWeight(5);
+  strokeCap(SQUARE);
   
  // circle(mouseX, height-mouseY, 100);
   line(pmouseX, pmouseY, mouseX, mouseY);
   
-  strokeCap(SQUARE);
-  
-
-//won't run until boolean is finished
-  boolean a = false;
-  if (!a) {
-  }
 
 
 

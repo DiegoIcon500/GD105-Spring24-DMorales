@@ -10,7 +10,7 @@ void setup() {
   size(1200, 1000);
   strokeCap(SQUARE);
   background(255);
-  frameRate(15);
+  frameRate(10);
 
   // seting color values apart from rgb which is below
   sapphire = #3E49FF;
@@ -26,8 +26,8 @@ void setup() {
   circleX2 = 300;
   circleY2 = 500;
   circleZ2 = 50;
-  squareX = random(1000);
-  squareY = random(800);
+  squareX = random(800);
+  squareY = random(600);
   squareZ = random(200);
 }
 
@@ -47,8 +47,7 @@ void draw() {
 
   circleX = circleX + 2;
   circleY = circleY - 3;
-  circleX2 = circleX2 + random(-10, 15);
-  squareX = squareX + 2;
+  circleX2 = circleX2 + random(-15, 15);
   squareY = squareY - 2;
   squareZ = squareZ - 1;
   
@@ -56,6 +55,7 @@ void draw() {
   square(squareX, squareY, squareZ);
   ellipse(circleX2, circleY2, circleZ2, 50);
   
+  resetMatrix();
   stroke(135);
   line(lineX, lineY, random(500), random(500));
   
@@ -64,7 +64,7 @@ void draw() {
 {
     textSize(35);
     fill(lime);
-    text("YO! i got masters on Apex again, the 2x fr", 95, 165);
+    text("YO! i got masters on Apex again, the 2x fr", 95, 898);
     noFill();
   }
 
@@ -73,11 +73,12 @@ void draw() {
   stroke(rgbKeyboard);
   strokeWeight(35);
 
+//random lines
   line(width += 450, 800, height -= 500, 800);
   
   println(frameCount);
 
-  if (frameCount > 100) {
+  if (frameCount > 115) {
     noLoop();
   }
 }

@@ -21,6 +21,13 @@ void setup() {
 void draw() {
    background(50);
    
+   //guiding
+   noStroke();
+   strokeWeight(4);
+   stroke(ruby);
+   rect(215, 840, 450, 50);
+   triangle(668, 920, 837, 870, 665, 819);
+   
   //initallizing words
   rgbGamer = color(random(255), random(255), random(255), random(255));
   noStroke();
@@ -39,7 +46,7 @@ void draw() {
   if (mousePressed == true) {
     fill(ruby);
   } else {
-    fill(45);
+    fill(48);
   }
   textSize(55);
   text("!!TIME TO HUNT!!", 255, 300);

@@ -3,7 +3,7 @@
 
 //Declaring some Bullshiii
 
-color ruby, turqouise, rgbGamer;
+color ruby, Purp, rgbGamer;
 float topLeft, topRight;
 
 
@@ -13,7 +13,7 @@ void setup() {
 
   //initializing colors
   ruby = #F00000;
-  turqouise = #00FACA;
+  Purp = #7C15E5;
   
   
 
@@ -23,20 +23,13 @@ void setup() {
 void draw() {
    background(50);
    
-   //guiding
-   noStroke();
-   strokeWeight(4);
-   stroke(ruby);
-   rect(215, 840, 450, 50);
-   triangle(668, 920, 837, 870, 665, 819);
-   
   //initallizing words
   rgbGamer = color(random(255), random(255), random(255), random(255));
   
   //creating if statement for crossing the barrier
    resetMatrix();
   if (mouseX <= 150) {
-    background(40);
+    background(45);
   } else {
     background(50);
   }
@@ -44,7 +37,7 @@ void draw() {
   
   noStroke();
   if (mouseX > 900) {
-    fill(turqouise);
+    fill(Purp);
   } else {
     fill(50);
   }
@@ -52,6 +45,13 @@ void draw() {
 //ellipse(450, 440, 188, 229);
   textSize(45);
   text("Press your mouse buddy", 235, 800);
+  
+   //guiding
+   noStroke();
+   strokeWeight(4);
+   stroke(ruby);
+   rect(215, 840, 450, 50);
+   triangle(668, 920, 837, 870, 665, 819);
   
 
   

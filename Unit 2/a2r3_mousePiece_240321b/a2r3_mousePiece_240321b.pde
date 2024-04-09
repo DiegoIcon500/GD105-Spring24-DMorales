@@ -10,20 +10,29 @@ float topLeft, topRight;
 
 void setup() {
   size(1000, 1000);
-  //background(50);
 
   //initializing colors
   ruby = #F00000;
   turqouise = #00FACA;
-  //rgbGamer = color(random(255), random(255), random(255), random(255));
 
-  //initializing words...
+
 }
 
 void draw() {
    background(50);
+   
   //initallizing words
   rgbGamer = color(random(255), random(255), random(255), random(255));
+  noStroke();
+  if (mouseX > 900) {
+    fill(turqouise);
+  } else {
+    fill(50);
+  }
+//ellipse(450, 440, 188, 229);
+  textSize(45);
+  text("Press your mouse buddy", 235, 800);
+  
   
   //creating the face and hhow it'll turn red
   noStroke();
@@ -33,7 +42,7 @@ void draw() {
     fill(45);
   }
   textSize(55);
-  text("!!TIME TO HUNT!!", 255, 340);
+  text("!!TIME TO HUNT!!", 255, 300);
   ellipse(418, 395, 25, 35);
   ellipse(480, 395, 25, 35);
   rotate( -0.31);
@@ -62,11 +71,11 @@ void draw() {
  // circle(mouseX, height-mouseY, 100);
   line(pmouseX, pmouseY, mouseX, mouseY);
   
-  
+  line(900, 0, 900, height);
   
 
 //saving
-  if (frameCount == 450){
-      save("mousePiece.png");
-  }
+  //if (frameCount == 450){
+     // save("mousePiece.png");
+ // }
 }

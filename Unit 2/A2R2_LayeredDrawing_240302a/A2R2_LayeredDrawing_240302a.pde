@@ -1,21 +1,10 @@
 // Layered piece, if im being honest staarting off this project, i will simply be
 // messing around with what i learn and hope to get my insiration as i mess around
-// 
+
 
 // declaring some variables
 color ruby, lime, sapphire, skyBlue, rgbKeyboard, random;
-float circleX;
-float circleY;
-float circleZ;
-float circleX2;
-float circleY2;
-float circleZ2;
-float squareX;
-float squareY;
-float squareZ;
-float lineX;
-float lineY;
-
+float circleX, circleY, circleZ, circleX2, circleY2, circleZ2, squareX, squareY, squareZ, lineX, lineY;
 
 void setup() {
   size(1200, 1000);
@@ -58,12 +47,10 @@ void draw() {
 
   circleX = circleX + 2;
   circleY = circleY - 3;
-  circleX2 = circleX2 + random(-4, 4);
+  circleX2 = circleX2 + random(-10, 15);
   squareX = squareX + 2;
   squareY = squareY - 2;
   squareZ = squareZ - 1;
-  
-
   
   ellipse(circleX, circleY, circleZ, random(100));
   square(squareX, squareY, squareZ);
@@ -73,12 +60,8 @@ void draw() {
   line(lineX, lineY, random(500), random(500));
   
 
-
-// uneccesary but wanted to use boolean
-  boolean a = false;
-  if (!a) {
-    // slight text moment
-
+    // slight text moment for no reason
+{
     textSize(35);
     fill(lime);
     text("YO! i got masters on Apex again, the 2x fr", 95, 165);
@@ -91,8 +74,10 @@ void draw() {
   strokeWeight(35);
 
   line(width += 450, 800, height -= 500, 800);
+  
+  println(frameCount);
 
-  if (frameCount == 15) {
-    save("layeredPiece.gif");
+  if (frameCount > 100) {
+    noLoop();
   }
 }

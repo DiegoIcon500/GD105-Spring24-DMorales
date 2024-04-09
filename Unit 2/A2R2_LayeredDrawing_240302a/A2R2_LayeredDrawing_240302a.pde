@@ -53,6 +53,7 @@ void draw() {
   
   ellipse(circleX, circleY, circleZ, random(100));
   square(squareX, squareY, squareZ);
+  rotate(TWO_PI/frameCount);
   ellipse(circleX2, circleY2, circleZ2, 50);
   
   resetMatrix();

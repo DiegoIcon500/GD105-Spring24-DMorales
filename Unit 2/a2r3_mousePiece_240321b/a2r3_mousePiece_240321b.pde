@@ -32,11 +32,14 @@ void draw() {
   } else {
     fill(0);
   }
-  ellipse(415, 395, 25, 35);
+  ellipse(418, 395, 25, 35);
   ellipse(480, 395, 25, 35);
   rotate( -0.31);
   translate(-157,93);
   triangle(418, 443, 408, 472, 410, 442);
+  triangle(496, 471, 482, 495, 488, 466);
+  triangle(476, 481, 469, 508, 476, 505);
+  triangle(419, 466, 410, 483, 414, 491);
 
 
   resetMatrix();

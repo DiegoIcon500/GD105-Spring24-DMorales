@@ -32,6 +32,8 @@ void draw() {
   } else {
     fill(0);
   }
+  textSize(55);
+  text("!!TIME TO HUNT!!", 255, 340);
   ellipse(418, 395, 25, 35);
   ellipse(480, 395, 25, 35);
   rotate( -0.31);
@@ -40,6 +42,12 @@ void draw() {
   triangle(496, 471, 482, 495, 488, 466);
   triangle(476, 481, 469, 508, 476, 505);
   triangle(419, 466, 410, 483, 414, 491);
+  rect(415, 370, 30, 10);
+  resetMatrix();
+  rotate(0.19);
+  translate(60,-95);
+  rect(468, 353, 30, 10);
+
 
 
   resetMatrix();
@@ -53,6 +61,8 @@ void draw() {
   
  // circle(mouseX, height-mouseY, 100);
   line(pmouseX, pmouseY, mouseX, mouseY);
+  
+  
   
 
 //saving

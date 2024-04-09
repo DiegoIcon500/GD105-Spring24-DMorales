@@ -14,12 +14,14 @@ void setup() {
   //initializing colors
   ruby = #F00000;
   turqouise = #00FACA;
+  
+  
 
 
 }
 
 void draw() {
-   background(50);
+  // background(50);
    
    //guiding
    noStroke();
@@ -30,18 +32,30 @@ void draw() {
    
   //initallizing words
   rgbGamer = color(random(255), random(255), random(255), random(255));
+  
+  //creating if statement for crossing the barrier
+   resetMatrix();
+  if (mouseX <= 150) {
+    background(40);
+  } else {
+    background(50);
+  }
+  
+  
   noStroke();
   if (mouseX > 900) {
     fill(turqouise);
   } else {
     fill(50);
   }
+  
 //ellipse(450, 440, 188, 229);
   textSize(45);
   text("Press your mouse buddy", 235, 800);
   
+
   
-  //creating the face and hhow it'll turn red
+  //creating the face and how it'll turn red
   noStroke();
   if (mousePressed == true) {
     fill(ruby);
@@ -78,7 +92,9 @@ void draw() {
  // circle(mouseX, height-mouseY, 100);
   line(pmouseX, pmouseY, mouseX, mouseY);
   
+// my "if" walls
   line(900, 0, 900, height);
+  line(150, 0, 150, height);
   
 
 //saving

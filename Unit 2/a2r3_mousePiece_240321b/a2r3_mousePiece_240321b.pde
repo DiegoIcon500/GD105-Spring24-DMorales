@@ -36,7 +36,7 @@ void draw() {
   
   
   noStroke();
-  if (mouseX > 900) {
+  if (mouseX >= 900) {
     fill(Purp);
   } else {
     fill(50);

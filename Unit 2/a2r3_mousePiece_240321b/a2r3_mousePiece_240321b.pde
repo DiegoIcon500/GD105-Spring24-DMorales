@@ -21,16 +21,16 @@ void setup() {
 }
 
 void draw() {
+   background(50);
   //initallizing words
-  
-  background(50);
   rgbGamer = color(random(255), random(255), random(255), random(255));
   
+  //creating the face and hhow it'll turn red
   noStroke();
   if (mousePressed == true) {
     fill(ruby);
   } else {
-    fill(0);
+    fill(45);
   }
   textSize(55);
   text("!!TIME TO HUNT!!", 255, 340);
@@ -49,11 +49,11 @@ void draw() {
   rect(468, 353, 30, 10);
 
 
-
   resetMatrix();
   noFill();
   stroke(255);
   ellipse(450, 450, 105, 60);
+  
   
   stroke(rgbGamer);
   strokeWeight(5);

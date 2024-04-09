@@ -1,4 +1,4 @@
-
+// use noise maybe fo gif
 
 void setup(){
   size(1000, 1000);
@@ -7,5 +7,4 @@ void setup(){
 
 void draw(){
  background(55); 
- 
 }

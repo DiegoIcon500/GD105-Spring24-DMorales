@@ -21,7 +21,7 @@ void setup() {
 }
 
 void draw() {
-  // background(50);
+   background(50);
    
    //guiding
    noStroke();

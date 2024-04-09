@@ -1,6 +1,7 @@
 // My aim is to create something where once object interacte with each other on
 // screen, a change occurs and pressing the mouse will reveal something
 
+
 //Declaring some Bullshiii
 
 color ruby, Purp, rgbGamer;

@@ -85,7 +85,7 @@ void draw() {
   stroke(255);
   ellipse(450, 450, 105, 60);
   
-  
+  //creating an rgb pencil basically/kinda/maybe not?
   stroke(rgbGamer);
   strokeWeight(5);
   strokeCap(SQUARE);

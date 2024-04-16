@@ -92,7 +92,6 @@ void draw() {
   translate(60,-95);
   rect(468, 353, 30, 10);
   line(445, 480, 480, bloodDrip - 40);
-  stroke(0);
   line(504, 470, 520, bloodDrip - 40);
 
   resetMatrix();

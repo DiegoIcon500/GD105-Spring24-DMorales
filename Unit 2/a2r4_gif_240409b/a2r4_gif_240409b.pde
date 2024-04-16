@@ -1,7 +1,10 @@
-// Gif
+// Gif Piece
+//
+//
+
+//calling 
 PVector points;
 color mint;
-String a;
 long seed = 345987;
 
 void setup(){
@@ -10,9 +13,8 @@ void setup(){
   points = new PVector(width/2, height/2);
   frameRate(100);
   
-  mint = #4AFC7B;
-  
-  randomSeed(seed);
+  mint = #4AFC7B;  
+  randomSeed(seed); // saving seed
   
 }
 

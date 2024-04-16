@@ -2,7 +2,7 @@
 // messing around with what i learn and hope to get my insiration as i mess around
 
 
-// declaring some variables
+// declaring alot of stuff
 color ruby, lime, sapphire, skyBlue, rgbKeyboard, random;
 float circleX, circleY, circleZ, circleX2, circleY2, circleZ2, squareX, squareY, squareZ, lineX, lineY;
 
@@ -19,7 +19,6 @@ void setup() {
   skyBlue = #12FFFD;
 
   // setting value to my variables
-  // randomCircle = circle(random(width), random(height), 85);
   circleX = random(1000);
   circleY = random(800);
   circleZ = random(200);
@@ -53,7 +52,7 @@ void draw() {
   
   ellipse(circleX, circleY, circleZ, random(100));
   square(squareX, squareY, squareZ);
-  rotate(TWO_PI/frameCount);
+  rotate(random(TAU));
   ellipse(circleX2, circleY2, circleZ2, 50);
   
   resetMatrix();

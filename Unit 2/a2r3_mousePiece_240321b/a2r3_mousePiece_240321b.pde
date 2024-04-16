@@ -3,7 +3,7 @@
 
 
 //Declaring some Bullshiii
-
+int bloodDrip;
 color ruby, Purp, rgbGamer;
 float topLeft, topRight;
 
@@ -12,17 +12,19 @@ float topLeft, topRight;
 void setup() {
   size(1000, 1000);
 
-  //initializing colors
+  //initializing 
   ruby = #F00000;
   Purp = #7C15E5;
+  bloodDrip = 590;
   
   
-
 
 }
 
 void draw() {
    background(50);
+   
+   bloodDrip = bloodDrip + 1;
    
   //initallizing words
   rgbGamer = color(random(255), random(255), random(255), random(255));
@@ -32,7 +34,18 @@ void draw() {
   if (mouseX <= 150) {
     background(45);
   } else {
+    noStroke();
     background(50);
+    fill(ruby);
+    ellipse(286, 534, 115, 66);   //creating blood splatter
+    ellipse(360, 565, 143, 69);   
+    ellipse(251, 584, 115, 76);   
+    strokeWeight(6);
+    stroke(ruby);
+    line(330, 575, 335, bloodDrip);   // creating blood drip 
+    line(270, 575, 270, bloodDrip);   
+    line(285, 565, 300, bloodDrip);  
+    
   }
   
   
@@ -54,12 +67,12 @@ void draw() {
    rect(215, 840, 450, 50);
    triangle(668, 920, 837, 870, 665, 819);
   
-
   
   //creating the face and how it'll turn red
   noStroke();
   if (mousePressed == true) {
     fill(ruby);
+    stroke(ruby);
   } else {
     fill(48);
   }
@@ -78,14 +91,16 @@ void draw() {
   rotate(0.19);
   translate(60,-95);
   rect(468, 353, 30, 10);
-
+  line(445, 480, 480, bloodDrip - 40);
+  stroke(0);
+  line(504, 470, 520, bloodDrip - 40);
 
   resetMatrix();
   noFill();
   stroke(255);
   ellipse(450, 450, 105, 60);
   
-  //creating an rgb pencil basically/kinda/maybe not?
+  //creating an rgb trail but i don't want it to stick
   stroke(rgbGamer);
   strokeWeight(5);
   strokeCap(SQUARE);
@@ -97,9 +112,13 @@ void draw() {
   line(900, 0, 900, height);
   line(150, 0, 150, height);
   
+  println(frameCount);        //pausing at frame 300
+  if (frameCount == 300){     
+    noLoop();
+  }
+  
 
-//saving
-  //if (frameCount == 450){
-     // save("mousePiece.png");
- // }
+  if (frameCount == 300){     //saving
+      save("mousePiece.png");
+  }
 }

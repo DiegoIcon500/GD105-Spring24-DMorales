@@ -1,8 +1,8 @@
 // Gif
 PVector points;
 color mint;
-int frameCount;
 String a;
+long seed = 345987;
 
 void setup(){
   size(1000, 1000);
@@ -11,7 +11,8 @@ void setup(){
   frameRate(100);
   
   mint = #4AFC7B;
-  boolean a = boolean(frameCount);
+  
+  randomSeed(seed);
   
 }
 
@@ -25,8 +26,6 @@ void draw(){
  points.x += random(-2, 2);
  points.y += random(-2, 2);
  
- if (a) = 1000) {
-   
- }
+
  
 }

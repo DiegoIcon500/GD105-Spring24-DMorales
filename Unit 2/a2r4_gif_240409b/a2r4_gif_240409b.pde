@@ -1,6 +1,7 @@
 // Gif Piece
-//
-//
+// In this piece i will be making an aggitated and suffering face
+// due to the AC not working properly 
+// AKA Me losing my mind in the heat
 
 //calling 
 String S = "The AC is blowing HOT AIR!";

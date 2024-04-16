@@ -26,17 +26,24 @@ void draw(){
  float space = 10;
  for (int i = 0; i < S.length(); i++) {
    char c = S.charAt(i);
- textSize(22);
+ textSize(25);
  fill(random(0, 255));
- text(c, space + 350, 800);
+ text(c, space + 345, 800);
  space = space + textWidth(c);
  
  }
- 
+ if (frameCount < 600){
  fill(mint);
- circle(points.x, points.y, frameCount/2);
- println(frameCount);
+ ellipse(points.x, points.y, 450, frameCount);
+ circle(points.x, points.y, frameCount + 100/2);
+ }
+ else {
+ fill(mint);
+ ellipse(points.x, points.y, 450, frameCount);
+ circle(points.x, points.y, frameCount + 100/2);
+ }
  
+ println(frameCount);
  points.x += random(-2, 2);
  points.y += random(-3, 3);
  

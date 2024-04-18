@@ -43,6 +43,7 @@ void draw(){
   text(c, space + 165, 950);
   space = space + textWidth(c) + 10;
  
+ //face
  }
  if (frameCount < 10000){
   fill(HEAT);
@@ -52,20 +53,32 @@ void draw(){
   ellipse(eyes.x + 100, eyes.y - 50, 105, 20); //right eye
   fill(#FF1524);
   noStroke();
-  rect(nose.x - 10, nose.y + 10, 20, 50);
+  rect(nose.x - 15, nose.y , 20, 50); // villager nose
  }
  
 
-//  points.x += random(-2, 2); //moving face around to add to the Aggitated look
+  points.x += random(-2, 2); //moving face around to add to the Aggitated look
   points.y += random(-3, 3);
   
-//  eyes.x += random(-2, 2);   // moving eyes around
+  eyes.x += random(-2, 2);   // moving eyes around
   eyes.y += random(-3, 3);
   
   nose.y += random (-1, 1); 
   
+  points.x = constrain(points.x, 580, 645); 
+  points.y = constrain(points.y, 580, 645);
+  
+  eyes.x = constrain( eyes.x, 570, 650);
+  eyes.y = constrain(eyes.y, 570, 650);
+  
   fill(#FF3503);
   ellipse(0, 0, 275, 245);  //SUN
+  noFill();
+  stroke(#FF3503);
+  strokeWeight(5);
+  curve(780, -575, 120, 55, 240, 210, -325, 1115);
+  curve(775, -380, 55, 105, 135, 275, -465, 875);
+  noStroke();
  
 //if (frameCount == 700){
 // noLoop(); 

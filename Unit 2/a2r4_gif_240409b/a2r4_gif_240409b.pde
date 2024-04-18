@@ -13,7 +13,7 @@ PImage AC;
 
 void setup(){
   size(1280, 1280);
-//  frameRate(50);
+//frameRate(50);
   
   //PV's for my face
   points = new PVector(width/2, height/2);
@@ -108,6 +108,7 @@ void draw(){
   circle(lerp(circleX.x, circleX.y, movement), lerp(circleX.y, circleY.y , movement ), 25);
   circle(lerp(circleX.x - 100, circleX.y - 100, movement), lerp(circleX.y + 30, circleY.y + 30, movement ), 25);
   circle(lerp(circleX.x - 160, circleX.y - 160, movement), lerp(circleX.y + 80, circleY.y + 80, movement ), 25);
+  circle(lerp(circleX.x - -50, circleX.y - 21, movement), lerp(circleX.y + 50, circleY.y + 50, movement ), 25);
  
 if (frameCount == 150){
  noLoop(); 

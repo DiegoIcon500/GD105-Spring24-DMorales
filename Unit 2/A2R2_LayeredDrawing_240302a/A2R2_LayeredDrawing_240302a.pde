@@ -39,6 +39,7 @@ void draw() {
   // creating seizure line color
   color rgbKeyboard = color(random(255), random(255), random(255), random(255));
 
+  
   //Generating my circles :)
   noStroke();
   stroke(ruby);
@@ -57,7 +58,7 @@ void draw() {
   
   resetMatrix();
   stroke(135);
-  line(lineX, lineY, random(500), random(500));
+ // line(lineX, lineY, random(500), random(500));
   
 
     // slight text moment for no reason

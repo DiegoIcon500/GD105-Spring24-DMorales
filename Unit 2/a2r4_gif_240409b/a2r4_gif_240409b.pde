@@ -40,9 +40,9 @@ void draw(){
  for (int i = 0; i < S.length(); i++) {
    char c = S.charAt(i);
   textFont(melt);
-  textSize(48);
+  textSize(55);
   fill(random(0, 255));
-  text(c, space + 165, 950);
+  text(c, space + 80, 950);
   space = space + textWidth(c) + 10;
  
  //face
@@ -100,16 +100,28 @@ void draw(){
   noStroke();
   
   // sun particles
-  PVector circleX, circleY; 
+  PVector circleX, circleY, Lx, Ly;
   float movement = map(sin(frameCount * 0.25), 1, -1, 0, 1);
+  float Lmove = map(cos(frameCount * 0.25), -1, 1, 0, 1);
+  float a = 400;
+  float b = 380;
+  
   circleX = new PVector(289, 112);
   circleY = new PVector(340, 30);
+  Lx = new PVector(365, 450);
+  Ly = new PVector(400, 500);
+  
   fill(SUN);
-  circle(lerp(circleX.x, circleX.y, movement), lerp(circleX.y, circleY.y , movement ), 25);
+  circle(lerp(circleX.x, circleX.y, movement), lerp(circleX.y, circleY.y , movement ), 25);    // the sun particles are the balls
   circle(lerp(circleX.x - 100, circleX.y - 100, movement), lerp(circleX.y + 30, circleY.y + 30, movement ), 25);
   circle(lerp(circleX.x - 160, circleX.y - 160, movement), lerp(circleX.y + 80, circleY.y + 80, movement ), 25);
   circle(lerp(circleX.x - -50, circleX.y - 21, movement), lerp(circleX.y + 50, circleY.y + 50, movement ), 25);
- 
+  
+  stroke(SUN);
+  line(lerp(Lx.x + 400, Lx.y + 450, Lmove), lerp(Ly.y, Ly.y, Lmove), a + 450, b);    // orange line, represent hot air blowing out
+  line(lerp(Lx.x , Lx.y, Lmove), lerp(Ly.y, Ly.y, Lmove), a , b );
+  
+  
 if (frameCount == 150){
  noLoop(); 
 }

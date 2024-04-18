@@ -8,6 +8,7 @@ String S = "The AC is blowing HOT AIR!";
 PVector points;
 color HEAT;
 long seed = 345987;
+PFont melt = createFont("", 40);
 
 void setup(){
   size(1000, 1000);
@@ -38,19 +39,14 @@ void draw(){
 // ellipse(points.x, points.y, 450, frameCount);
  circle(points.x, points.y, frameCount + 100/2);
  }
- else {
- fill(HEAT);
-// ellipse(points.x, points.y, 450, frameCount);
- circle(points.x, points.y, frameCount - 100/2);
- }
  
  println(frameCount);
  points.x += random(-2, 2);
  points.y += random(-3, 3);
  
-if (frameCount == 700){
- noLoop(); 
-}
+//if (frameCount == 700){
+// noLoop(); 
+//}
 
 println(frameCount);
 

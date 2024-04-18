@@ -1,5 +1,8 @@
-// My aim is to create something where once object interacte with each other on
-// screen, a change occurs and pressing the mouse will reveal something
+// My aim is to create something where once the mouse crosses points on the 
+// screen, a change occurs and pressing the mouse will reveal something "hidden"
+
+// this may have to be run more than once to reveal the "hidden" thing in time
+// 
 
 
 //Declaring some Bullshiii
@@ -11,6 +14,7 @@ float topLeft, topRight;
 
 void setup() {
   size(1000, 1000);
+  frameRate(20);
 
   //initializing 
   ruby = #F00000;

@@ -6,7 +6,7 @@
 //calling 
 String S = "The AC is blowing HOT AIR!";
 PVector points;
-color mint;
+color HEAT;
 long seed = 345987;
 
 void setup(){
@@ -15,7 +15,7 @@ void setup(){
   points = new PVector(width/2, height/2);
   frameRate(100);
   
-  mint = #4AFC7B;  
+  HEAT = #FF7300;  
   randomSeed(seed); // saving seed
   
 }
@@ -27,21 +27,21 @@ void draw(){
  float space = 10;
  for (int i = 0; i < S.length(); i++) {
    char c = S.charAt(i);
- textSize(25);
+ textSize(40);
  fill(random(0, 255));
- text(c, space + 345, 800);
+ text(c, space + 250, 800);
  space = space + textWidth(c);
  
  }
  if (frameCount < 600){
- fill(mint);
- ellipse(points.x, points.y, 450, frameCount);
+ fill(HEAT);
+// ellipse(points.x, points.y, 450, frameCount);
  circle(points.x, points.y, frameCount + 100/2);
  }
  else {
- fill(mint);
- ellipse(points.x, points.y, 450, frameCount);
- circle(points.x, points.y, frameCount + 100/2);
+ fill(HEAT);
+// ellipse(points.x, points.y, 450, frameCount);
+ circle(points.x, points.y, frameCount - 100/2);
  }
  
  println(frameCount);
@@ -53,5 +53,11 @@ if (frameCount == 700){
 }
 
 println(frameCount);
- 
+
+//saving frames
+if(frameCount * 0.05 < TAU * 1.0){
+    saveFrame("frames/####.png");
+ }
 }
+
+  

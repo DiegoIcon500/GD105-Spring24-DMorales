@@ -71,10 +71,10 @@ void draw(){
   
   nose.y += random (-1, 1); 
   
-  points.x = constrain(points.x, 580, 645); 
+  points.x = constrain(points.x, 580, 645); // constraining the head
   points.y = constrain(points.y, 580, 645);
   
-  eyes.x = constrain( eyes.x, 570, 650);
+  eyes.x = constrain( eyes.x, 570, 650);  // constraining eyes
   eyes.y = constrain(eyes.y, 570, 650);
   
   fill(SUN);
@@ -82,18 +82,19 @@ void draw(){
   noFill();
   stroke(SUN);
   strokeWeight(5);
-  curve(780, -575, 120, 55, 240, 210, -325, 1115);
+  curve(780, -575, 120, 55, 240, 210, -325, 1115); // sun rays
   curve(775, -380, 55, 105, 135, 275, -465, 875);
   noStroke();
   
+  // sun particles
   PVector circleX, circleY; 
   float movement = map(sin(frameCount * 0.25), 1, -1, 0, 1);
   circleX = new PVector(289, 112);
   circleY = new PVector(340, 30);
   fill(SUN);
-  circle(lerp(circleX.x, circleX.y, movement), lerp(circleX.y, circleY.y , movement ), 35);
-  circle(lerp(circleX.x - 100, circleX.y - 100, movement), lerp(circleX.y + 30, circleY.y + 30, movement ), 35);
-  circle(lerp(circleX.x - 160, circleX.y - 160, movement), lerp(circleX.y + 80, circleY.y + 80, movement ), 35);
+  circle(lerp(circleX.x, circleX.y, movement), lerp(circleX.y, circleY.y , movement ), 25);
+  circle(lerp(circleX.x - 100, circleX.y - 100, movement), lerp(circleX.y + 30, circleY.y + 30, movement ), 25);
+  circle(lerp(circleX.x - 160, circleX.y - 160, movement), lerp(circleX.y + 80, circleY.y + 80, movement ), 25);
  
 if (frameCount == 150){
  noLoop(); 

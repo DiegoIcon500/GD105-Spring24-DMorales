@@ -9,46 +9,47 @@ PVector points, eyes;
 color HEAT;
 long seed = 345987;
 PFont melt;
+PImage AC;
 
 void setup(){
-  size(1000, 1000);
+  size(1280, 1280);
+  frameRate(50);
   
   //PV's for my face
   points = new PVector(width/2, height/2);
   frameRate(100);
   
-  eyes = new PVector(375, 450);
+  eyes = new PVector(width/2, height/2);
   
   HEAT = #FF7300;  // color of face
   randomSeed(seed); // saving seed
   
   melt = loadFont("MeltdownMF-40.vlw"); //loading font
-  
+  AC = loadImage("AC_drawing.png"); // adding background
   
   
 }
 
 void draw(){
-  background(55);
-  
+  background(AC);
  
  //drawing melting text
  float space = 10;
  for (int i = 0; i < S.length(); i++) {
    char c = S.charAt(i);
   textFont(melt);
-  textSize(40);
+  textSize(48);
   fill(random(0, 255));
-  text(c, space + 225, 850);
-  space = space + textWidth(c);
+  text(c, space + 165, 950);
+  space = space + textWidth(c) + 10;
  
  }
  if (frameCount < 10000){
   fill(HEAT);
   circle(points.x, points.y, 400); // head
   fill(0);
-  ellipse(eyes.x, eyes.y, 105, 20); //left eye
-  ellipse(eyes.x + 200, eyes.y, 105, 20); //right eye
+  ellipse(eyes.x - 100, eyes.y - 50, 105, 20); //left eye
+  ellipse(eyes.x + 100, eyes.y - 50, 105, 20); //right eye
  }
  
 

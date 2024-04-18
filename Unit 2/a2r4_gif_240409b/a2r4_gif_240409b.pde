@@ -87,7 +87,7 @@ void draw(){
   noStroke();
   
   PVector circleX, circleY; 
-  float movement = map(cos(frameCount * 0.25), -1, 1, 0, 1);
+  float movement = map(sin(frameCount * 0.25), 1, -1, 0, 1);
   circleX = new PVector(289, 112);
   circleY = new PVector(340, 30);
   fill(SUN);

@@ -110,6 +110,6 @@ void draw() {
 
 // creating the image output
   if (frameCount == 1) {
-    save("Collage_a1r2.png");
+    save("Collage_a2r1.png");
   }
 }

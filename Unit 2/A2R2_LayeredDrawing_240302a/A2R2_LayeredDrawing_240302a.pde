@@ -82,4 +82,8 @@ void draw() {
   if (frameCount > 115) {
     noLoop();
   }
+  
+    if (frameCount == 100) {
+    save("Layered_a2r2.png");
+  }
 }

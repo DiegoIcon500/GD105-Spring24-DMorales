@@ -116,8 +116,4 @@ void draw() {
     noLoop();
   }
   
-
-  if (frameCount == 300){     //saving
-      save("mousePiece.png");
-  }
 }

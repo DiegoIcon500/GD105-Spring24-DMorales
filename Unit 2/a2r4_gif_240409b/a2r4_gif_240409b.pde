@@ -4,11 +4,11 @@
 // AKA Me losing my mind in the heat
 
 //calling 
-String S = "The AC is blowing HOT AIR!";
+String S = "The A/C is blowing HOT AIR!";
 PVector points;
 color HEAT;
 long seed = 345987;
-PFont melt = createFont("MeltdownMF-40.vlw", 40);
+PFont melt;
 
 void setup(){
   size(1000, 1000);
@@ -43,7 +43,7 @@ void draw(){
  }
  if (frameCount < 600){
  fill(HEAT);
- circle(points.x, points.y, frameCount + 100/2);
+ circle(points.x, points.y, 450);
  }
  
  println(frameCount);

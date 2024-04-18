@@ -76,6 +76,19 @@ void draw(){
   
   eyes.x = constrain( eyes.x, 570, 650);  // constraining eyes
   eyes.y = constrain(eyes.y, 570, 650);
+
+
+  fill(HEAT);
+  circle(points.x, points.y, 400); // head
+  fill(0);
+  ellipse(eyes.x - 100, eyes.y - 50, 105, 20); //left eye
+  ellipse(eyes.x + 100, eyes.y - 50, 105, 20); //right eye
+  fill(#FF1524);
+  noStroke();
+  rect(nose.x - 15, nose.y , 20, 50); // villager nose
+  float open = 20;
+  open = open += random(-1, 10);
+  ellipse(mouth.x - 10, mouth.y + 120, 100, open); // mouth
   
   fill(SUN);
   ellipse(0, 0, 275, 245);  //SUN

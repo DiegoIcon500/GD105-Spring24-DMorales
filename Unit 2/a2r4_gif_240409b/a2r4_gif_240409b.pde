@@ -5,7 +5,7 @@
 
 //calling 
 String S = "The A/C is blowing HOT AIR!";
-PVector points, eyes;
+PVector points, eyes, nose;
 color HEAT;
 long seed = 345987;
 PFont melt;
@@ -13,13 +13,13 @@ PImage AC;
 
 void setup(){
   size(1280, 1280);
-  frameRate(50);
+//  frameRate(50);
   
   //PV's for my face
   points = new PVector(width/2, height/2);
-  frameRate(100);
-  
   eyes = new PVector(width/2, height/2);
+  nose = new PVector(width/2, height/2);
+  frameRate(100);
   
   HEAT = #FF7300;  // color of face
   randomSeed(seed); // saving seed
@@ -50,13 +50,22 @@ void draw(){
   fill(0);
   ellipse(eyes.x - 100, eyes.y - 50, 105, 20); //left eye
   ellipse(eyes.x + 100, eyes.y - 50, 105, 20); //right eye
+  fill(#FF1524);
+  noStroke();
+  rect(nose.x - 10, nose.y + 10, 20, 50);
  }
  
 
-  points.x += random(-2, 2); //moving face around to add to the Aggitated look
+//  points.x += random(-2, 2); //moving face around to add to the Aggitated look
   points.y += random(-3, 3);
-  eyes.x += random(-2, 2);   // moving eyes around
-  eyes.y += random(-2, 2);
+  
+//  eyes.x += random(-2, 2);   // moving eyes around
+  eyes.y += random(-3, 3);
+  
+  nose.y += random (-1, 1); 
+  
+  fill(#FF3503);
+  ellipse(0, 0, 275, 245);  //SUN
  
 //if (frameCount == 700){
 // noLoop(); 

@@ -119,5 +119,7 @@ void draw() {
   if (frameCount == 300){     
     noLoop();
   }
-  
+    if (frameCount == 300) {
+    save("MouseReactive_a2r3.png");
+  }
 }

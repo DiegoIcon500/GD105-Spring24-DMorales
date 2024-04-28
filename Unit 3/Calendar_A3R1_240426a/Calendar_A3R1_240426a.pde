@@ -1,18 +1,25 @@
 // Calendar Piece, 
 //
 //
+color Purp = #7112FA;
+PImage backG;
 
 void setup(){
- size(1000, 1000);
- 
+ size(1245, 700);
+ //noLoop();
+ backG = loadImage("UntilDawn_RSZ.jpg");
  
 }
 
 
 void draw(){
- background(50);
+ background(backG);
  
- rect(width/2, height/2, 300, 30, 50);
+ fill(255);
+ rect(width/4.00, height/8.50, 500, 50, 20); 
+ fill(Purp);
+ textSize(50);
+ text("Filler", 456, 157);
  
  
 }

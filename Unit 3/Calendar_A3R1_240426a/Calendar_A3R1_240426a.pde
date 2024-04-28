@@ -16,10 +16,10 @@ void draw(){
  background(backG);
  
  fill(255);
- rect(width/4.00, height/8.50, 500, 50, 20); 
+ rect(width/5.00 - 150, height/8.50 - 75, 500, 50, 20); 
  fill(Purp);
  textSize(50);
- text("Filler", 456, 157);
+ text("Filler", 300, 50);
  
  
 }

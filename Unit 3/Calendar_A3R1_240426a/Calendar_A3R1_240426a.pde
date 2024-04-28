@@ -5,7 +5,7 @@ color Purp = #7112FA;
 PImage backG;
 
 void setup(){
- size(1245, 700);
+ size(1245 , 700);
  //noLoop();
  backG = loadImage("UntilDawn_RSZ.jpg");
  

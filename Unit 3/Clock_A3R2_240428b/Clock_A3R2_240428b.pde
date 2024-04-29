@@ -1,15 +1,16 @@
 
-
+PImage backG;
 
 void setup(){
- size(1000 , 1000);
+ size(1245 , 700);
 
- 
+ backG = loadImage("UntilDawn_RSZ.jpg");
 }
 
 
 void draw(){
- background(50);
+ background(backG);
+
  
   
   

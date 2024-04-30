@@ -60,10 +60,19 @@ void draw(){
 }
 
 void drawTomatoPlant(float Progress) {
+  
+  // Reset progress if seconds is 0
+  if (second() == 0) {
+    startTime = second();
+    rate = 1.0 / growth;
+    Progress = 0; // Reset growth progress
+  }
+  
+  translate(150, 0);
   // Stem
   float stemLength = 300 * Progress; 
   strokeWeight(5);
-  stroke(139, 69, 19); // Brown
+  stroke(#5A3B08); // Brown
   line(width / 2, height, width / 2, height - stemLength);
   
   // green tomato
@@ -77,5 +86,6 @@ void drawTomatoPlant(float Progress) {
   float tomatoSize = 50 * Progress; 
   fill(#F03030); // 
   ellipse(width / 2, height - stemLength - 50, tomatoSize, tomatoSize);
-  resetMatrix();
+  
+  resetMatrix(); // so translate doesn't affect normal clock
 }

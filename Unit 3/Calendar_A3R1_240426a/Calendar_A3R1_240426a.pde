@@ -7,6 +7,7 @@ color Purp = #7112FA;
 void setup(){
  size(1245 , 700);
  //noLoop();
+ strokeCap(ROUND);
  
  
 }

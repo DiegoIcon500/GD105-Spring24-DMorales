@@ -37,7 +37,10 @@ void draw(){
   stroke(rgb3);
   arc(0, 0, 250, 250, 0, ((2*PI)/31)*D); // day meter
   
-  text();
+  text(D, -70, 10);
+  text(H, -50, 10);
+  text(M, -30, 10);
+  text(S, -10, 10);
    
   
 }

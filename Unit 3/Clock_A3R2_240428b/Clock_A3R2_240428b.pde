@@ -1,4 +1,4 @@
-color rgb;
+color rgb, rgb1, rgb2, rgb3;
 PImage backG;
 
 void setup(){
@@ -7,6 +7,9 @@ void setup(){
   backG = loadImage("UntilDawn_RSZ.jpg"); // this background is honetly just for fun since 
                                           // the game is one of my favorites and about getting to dawn
   rgb = color(random(255), random(255), random(255));
+  rgb1 = color(random(255), random(255), random(255));   //setting color of each meter at random
+  rgb2 = color(random(255), random(255), random(255));
+  rgb3 = color(random(255), random(255), random(255));
   strokeCap(ROUND);
  
 }
@@ -24,11 +27,17 @@ void draw(){
 
   translate(400, 400);
   noFill();
-  strokeWeight(24);
+  strokeWeight(26);
   stroke(rgb);
-  arc(0, 0, 400, 400, 0, ((2*PI)/60)*S);
+  arc(0, 0, 400, 400, 0, ((2*PI)/60)*S); // seconds meter
+  stroke(rgb1);
+  arc(0, 0, 350, 350, 0, ((2*PI)/60)*M); // mins meter
+  stroke(rgb2);
+  arc(0, 0, 300, 300, 0, ((2*PI)/12)*H); // hours meter
+  stroke(rgb3);
+  arc(0, 0, 250, 250, 0, ((2*PI)/31)*D); // day meter
   
-  
+  text();
    
   
 }

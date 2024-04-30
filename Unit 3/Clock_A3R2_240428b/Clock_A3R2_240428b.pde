@@ -3,6 +3,7 @@
 // that's where the inspiration for this comes from
 
 // I ended up making a normal clock first to mkae sure i have a basic understanding
+// (best ran if program begins at start of new minute)
 
 color rgb, rgb1, rgb2, rgb3;
 int startTime; // Variable to store the start time
@@ -58,7 +59,10 @@ void draw(){
   
    
 }
-
+  // This tomato plant grows every second that passes by, if the plant is given 
+  // a full 60 secs, it will reach it's potential 
+  // (best ran if program begins at start of new minute)
+  
 void drawTomatoPlant(float Progress) {
   
   // Reset progress if seconds is 0

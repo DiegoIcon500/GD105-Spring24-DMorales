@@ -10,7 +10,6 @@ void setup(){
  smooth();
  strokeCap(ROUND);
  
- 
 }
 
 

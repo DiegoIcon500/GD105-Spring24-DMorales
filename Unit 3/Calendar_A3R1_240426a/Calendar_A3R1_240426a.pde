@@ -2,7 +2,10 @@
 //
 //
 color Purp = #7112FA;
-
+String[] monthNames = {
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+};
 
 void setup(){
  size(750 , 800);
@@ -24,12 +27,22 @@ void draw(){
  resetMatrix();
  
  translate(width / 2, height / 2);
- drawWheel();
+ Wheel();
  displayCurrentDate();
  
+ fill(0);
+ int currentMonth = month();
+ String currentMonthName = monthNames[currentMonth - 1];
+ textSize(24);
+ text(currentMonthName, width/28.00, height/3.00);
+ text(year(), width/9.00, height/2.99);
 }
+ 
+ //text(month(), -5, 255);
+ 
 
-void drawWheel() {
+
+void Wheel() {
   int Days = 31; // Maximum days in a month
   float angle = TWO_PI / Days;
   int diameter = 300;
@@ -46,13 +59,13 @@ void drawWheel() {
     line(0, 0, x, y);
     
      // label position
-    float labelX = cos(textAngle) * (diameter/2 + 20); // Place label slightly outside the wheel
+    float labelX = cos(textAngle) * (diameter/2 + 20); // Place label outside wheel
     float labelY = sin(textAngle) * (diameter/2 + 20);
     
     // Draw label
     pushMatrix();
     translate(labelX, labelY);
-    rotate(textAngle + PI/2); // Rotate label to match the section angle
+    rotate(textAngle + PI/2); // Rotate label to match the angle
     fill(0);
     textSize(10);
     text(i + 1, 0, 0);
@@ -63,10 +76,10 @@ void drawWheel() {
  void displayCurrentDate() {
    int currentDay = day();
   float angle = map(currentDay, 1, 31, 0, TWO_PI) - HALF_PI;
-  float x = cos(angle) * 150; // 150 is half of the circle's diameter
+  float x = cos(angle) * 150; 
   float y = sin(angle) * 150;
   
-  fill(Purp); // Highlight current day
+  fill(Purp); // Highlight current day in purple
   ellipse(x, y, 10, 10);
   
   fill(0);
@@ -74,4 +87,5 @@ void drawWheel() {
   text(currentDay, x + 2, y - 2);
  }
  
+ // I hate basic math
  

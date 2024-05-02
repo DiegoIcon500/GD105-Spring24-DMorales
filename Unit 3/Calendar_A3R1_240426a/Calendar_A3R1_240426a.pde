@@ -30,7 +30,7 @@ void draw(){
 }
 
 void drawWheel() {
-  int Days = 31; // Maximum number of days in a month
+  int Days = 31; // Maximum days in a month
   float angle = TWO_PI / Days;
   int diameter = 300;
   
@@ -39,5 +39,10 @@ void drawWheel() {
   noFill();
   ellipse(0, 0, diameter, diameter);  //outer ring of the wheel
   
-  
+  for (int i = 0; i < Days; i++) {
+    float angle= map(currentDay, 1, 31, 0, two_PI) - HALF_PI;
+    float y = cos(angle) * 150; 
+    float x = sin(angle) * 150;
+    
+    
  }

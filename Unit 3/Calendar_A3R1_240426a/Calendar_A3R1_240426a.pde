@@ -40,9 +40,23 @@ void drawWheel() {
   ellipse(0, 0, diameter, diameter);  //outer ring of the wheel
   
   for (int i = 0; i < Days; i++) {
+    float textAngle = angle * i - HALF_PI;
     float x = cos(angle * i - HALF_PI) * diameter/2;
     float y = sin(angle * i - HALF_PI) * diameter/2;
     line(0, 0, x, y);
+    
+     // label position
+    float labelX = cos(textAngle) * (diameter/2 + 20); // Place label slightly outside the wheel
+    float labelY = sin(textAngle) * (diameter/2 + 20);
+    
+    // Draw label
+    pushMatrix();
+    translate(labelX, labelY);
+    rotate(textAngle + PI/2); // Rotate label to match the section angle
+    fill(0);
+    textSize(10);
+    text(i + 1, 0, 0);
+    popMatrix();
   }
  }
  

@@ -55,6 +55,9 @@ void drawWheel() {
   fill(Purp); // Highlight current day
   ellipse(x, y, 10, 10);
   
+  fill(0);
+  textSize(24);
+  text(currentDay, x + 2, y - 2);
  }
  
  

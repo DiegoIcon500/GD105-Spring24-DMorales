@@ -40,9 +40,10 @@ void drawWheel() {
   ellipse(0, 0, diameter, diameter);  //outer ring of the wheel
   
   for (int i = 0; i < Days; i++) {
-    float angle= map(currentDay, 1, 31, 0, two_PI) - HALF_PI;
-    float y = cos(angle) * 150; 
-    float x = sin(angle) * 150;
-    
-    
+    float x = cos(angle
+    float y = sin(angle
+    line(0, 0, x, y);
+  }
  }
+ 
+ 

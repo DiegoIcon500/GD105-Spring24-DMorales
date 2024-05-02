@@ -1,6 +1,6 @@
-// Calendar Piece, 
-//
-//
+// Calendar Piece, when making this piece, my head was just constantly 
+// thinking about darts. I love darts, i wanted to make a dart board calendar
+// but that was pretty difficult so i settled with a wheel like calendar
 color Purp = #7112FA;
 String[] monthNames = {
   "January", "February", "March", "April", "May", "June",

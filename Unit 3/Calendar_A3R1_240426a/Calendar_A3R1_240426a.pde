@@ -52,7 +52,7 @@ void Wheel() {
   noFill();
   ellipse(0, 0, diameter, diameter);  //outer ring of the wheel
   
-  for (int i = 0; i < Days; i++) {
+  for (int i = 0; i < Days; i++) {    // inside wheel slices
     float textAngle = angle * i - HALF_PI;
     float x = cos(angle * i - HALF_PI) * diameter/2;
     float y = sin(angle * i - HALF_PI) * diameter/2;

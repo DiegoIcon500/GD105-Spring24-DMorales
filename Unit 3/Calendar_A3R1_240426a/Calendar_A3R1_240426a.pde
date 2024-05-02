@@ -25,7 +25,7 @@ void draw(){
  
  translate(width / 2, height / 2);
  drawWheel();
-// displayCurrentDate();
+ displayCurrentDate();
  
 }
 
@@ -44,6 +44,17 @@ void drawWheel() {
     float y = sin(angle * i - HALF_PI) * diameter/2;
     line(0, 0, x, y);
   }
+ }
+ 
+ void displayCurrentDate() {
+   int currentDay = day();
+  float angle = map(currentDay, 1, 31, 0, TWO_PI) - HALF_PI;
+  float x = cos(angle) * 150; // 150 is half of the circle's diameter
+  float y = sin(angle) * 150;
+  
+  fill(Purp); // Highlight current day
+  ellipse(x, y, 10, 10);
+  
  }
  
  

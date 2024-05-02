@@ -16,17 +16,17 @@ void setup(){
 void draw(){
  background(255); 
  
-// translate(140, 0);
  fill(255);
- rect(width/5.00 - 150, height/8.50 - 75, 500, 50, 20); 
+ rect(width/5.00 - 25, height/8.50 - 75, 500, 50, 20); 
  fill(Purp);
  textSize(50);
- text("Calendar on a wheel", 250, 40);
+ text("Calendar on a wheel", 165, 60);
  resetMatrix();
  
  translate(width / 2, height / 2);
  drawWheel();
 // displayCurrentDate();
+ 
 }
 
 void drawWheel() {

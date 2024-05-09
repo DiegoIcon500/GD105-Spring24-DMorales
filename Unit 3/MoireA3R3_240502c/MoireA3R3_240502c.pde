@@ -10,4 +10,7 @@ void setup() {
 void draw() {
   background(255);
   
+  int numLines = 20; // # Of lines
+  float spacing = width / (float)(numLines + 1); // Spacing between lines
+  
 }

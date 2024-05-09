@@ -85,6 +85,10 @@ void Wheel() {
   fill(0);
   textSize(24);
   text(currentDay, x + 2, y - 2);
+  
+  if (frameCount == 1){
+   save("CalendarWheel.jpg"); 
+  }
  }
  
  // I hate basic math

@@ -93,4 +93,10 @@ void drawTomatoPlant(float Progress) {
   ellipse(width / 2, height - stemLength - 50, tomatoSize, tomatoSize);
   
   resetMatrix(); // so translate doesn't affect normal clock
+  
+  println(frameCount);
+  
+  if (frameCount == 1200) {
+    save("TomatoPlantClock.jpg");
+  }
 }

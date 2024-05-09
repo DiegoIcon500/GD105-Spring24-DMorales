@@ -2,28 +2,12 @@
 //
 //
 
-float moireLines;
-
-
-void setup(){
- size(500, 500);
-  
- // multiLine = 
-  
+void setup() {
+  size(400, 400);
+  background(255);
 }
 
-
-void draw(){
- background(255);
- 
+void draw() {
+  background(255);
   
-  
-  
- }
-  
- // Moire();
 }
-
-//void Moire()
-
-//}

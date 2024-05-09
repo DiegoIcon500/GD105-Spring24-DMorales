@@ -96,7 +96,7 @@ void drawTomatoPlant(float Progress) {
   
   println(frameCount);
   
-  if (frameCount == 1200) {
+  if (frameCount == 1600) {
     save("TomatoPlantClock.jpg");
   }
 }

@@ -18,4 +18,7 @@ void draw() {
     line(x, 0, mouseX, height); // line from top to bottom at x position
     line(x, 0, mouseX, mouseY); 
   }
+  
+  if (frameCount == 100)
+  save("moireArt.jpg");
 }

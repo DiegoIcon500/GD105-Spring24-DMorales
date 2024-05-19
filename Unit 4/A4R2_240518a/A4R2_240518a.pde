@@ -51,4 +51,13 @@ void draw(){
     text(kyrieStats(i).season, x, 565);
   }
   
+  // lines for points, assist, rebounds
+  noFill();
+  strokeWeight(4);
+  for (int stat = 0; stat < 3; stat++) {
+    if (stat == 0) stroke(255, 0, 0); // points
+    else if (stat == 1)  stroke(0, 255, 0); // assist 
+    else if (stat == 2) stroke(0, 0, 255); // rebounds
+    
+   // beginShape();
     

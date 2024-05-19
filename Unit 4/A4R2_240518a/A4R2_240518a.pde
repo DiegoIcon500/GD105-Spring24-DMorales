@@ -2,6 +2,8 @@
 // Kyrie Irving is my favorite NBA player, and as i'm making this code the playoffs
 // nba players have simple averaged stats for each season which should be good numbers
 
+
+
 PlayerStats[] kyrieStats;
 int currentSeason = 0;
 int frameCount = 0;
@@ -33,9 +35,9 @@ void draw(){
   
   // Labels for axes
   fill(0);
-  textSize(15);
+  textSize(13);
   text("Seasons", 400, 580);
-  text("Stats", 6, 300);
+  text("Stats", 19, 317);
   
   // Y-axis labels and grid lines
   for (int i = 0; i <= 30; i += 5) {

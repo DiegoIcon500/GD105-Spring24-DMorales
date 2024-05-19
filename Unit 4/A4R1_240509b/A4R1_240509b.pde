@@ -4,6 +4,8 @@
 // I was able to identify the font used in the poem, however i couldn't find any
 // free verseions of the font :/
 
+// Click to the right side of each word to move around
+
 ArrayList<Word> words;
 Word selectedWord;
 int offsetX, offsetY;
@@ -31,13 +33,10 @@ void setup() {
   words.add(new Word("steer", 207, 340, 28, 28));
 }
 void draw() {
-  background(#e5ddd2);  // White background
-  fill(0);  // Black text
+  background(#e5ddd2);  // Beige background
   textAlign(CENTER, CENTER);  // Center the text
-
   fill(#0c2c61);
-
-  translate(-89, 15);
+  translate(-90, 15);
 
   for (Word word : words) {
     word.draw();

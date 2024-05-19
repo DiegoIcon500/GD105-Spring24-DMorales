@@ -71,4 +71,14 @@ void draw(){
    endShape();
   }
   
+  // Progression logic
+  frameCount++;
+  if (frameCount >= maxFramesPerSeason) {
+    frameCount = 0;
+    currentSeason++;
+    if (currentSeason >= kyrieStats.length) {
+      currentSeason = kyrieStats.length - 1;
+    }
+  }
+}
   

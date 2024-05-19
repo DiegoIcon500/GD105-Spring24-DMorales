@@ -46,7 +46,7 @@ void draw(){
   
   //X-axis stuffs
   for (int i = 0; i < kyrieStats.length; i++) {
-    int x = map(i , 0, kyrieStats.lenth - 1, 50, 750);
+    int x = map(i , 0, kyrieStats.length - 1, 50, 750);
     line(x, 545, x, 555); // x- axis ticks
     text(kyrieStats(i).season, x, 565);
   }

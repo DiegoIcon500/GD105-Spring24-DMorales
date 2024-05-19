@@ -38,8 +38,8 @@ void draw(){
       shapes.add(new Shape((int) random(width - shapeWidth), 0, shapeWidth, shapeHeight)); 
       //adding new shapes
       
-  if (frameCount == 200){
-  save("GameA5.jpg");
+  if (frameCount == 200){  // i'm confused
+    save("GameA5.png");
  }
 }
   

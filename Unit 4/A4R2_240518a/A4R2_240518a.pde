@@ -89,7 +89,5 @@ void draw(){
         ", Points: " + kyrieStats[currentSeason].points + 
         ", Assists: " + kyrieStats[currentSeason].assists + 
         ", Rebounds: " + kyrieStats[currentSeason].rebounds);
-
- 
 }
   

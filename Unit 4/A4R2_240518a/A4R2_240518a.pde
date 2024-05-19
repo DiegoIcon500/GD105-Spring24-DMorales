@@ -5,19 +5,19 @@
 
 void setup(){
   size(800, 600);
-//  kyrieStats = new PlayerStats[]{
-//    new PlayerStats("2014-2015", 21.7, 5.2, 3.2),
-//    new PlayerStats("2015-2016", 19.6, 4.7, 3.0),
-//   new PlayerStats("2016-2017", 25.2, 5.8, 3.2),
-//    new PlayerStats("2017-2018", 24.4, 5.1, 3.8),
-//    new PlayerStats("2018-2019", 23.8, 6.9, 5.0),
-//    new PlayerStats("2019-2020", 27.4, 6.4, 5.2),
-//    new PlayerStats("2020-2021", 26.9, 6.0, 4.8),
-//    new PlayerStats("2021-2022", 27.4, 5.8, 4.4),
-//    new PlayerStats("2022-2023", 26.9, 5.5, 5.1)
+  kyrieStats = new PlayerStats[]{
+    new PlayerStats("2014-2015", 21.7, 5.2, 3.2),
+    new PlayerStats("2015-2016", 19.6, 4.7, 3.0),
+   new PlayerStats("2016-2017", 25.2, 5.8, 3.2),
+    new PlayerStats("2017-2018", 24.4, 5.1, 3.8),
+    new PlayerStats("2018-2019", 23.8, 6.9, 5.0),
+    new PlayerStats("2019-2020", 27.4, 6.4, 5.2),
+    new PlayerStats("2020-2021", 26.9, 6.0, 4.8),
+    new PlayerStats("2021-2022", 27.4, 5.8, 4.4),
+    new PlayerStats("2022-2023", 26.9, 5.5, 5.1)
   };
-//  textAlign(CENTER, CENTER);
-//}
+  textAlign(CENTER, CENTER);
+}
   
 
 
@@ -41,4 +41,14 @@ void draw(){
     text(i, 30, y);
     stroke(200);
     line(50, y, 750, y); // Horizontal grid lines
-}
+  }
+  stroke(0);
+  
+  //X-axis stuffs
+  for (int i = 0; i < kyrieStats.length; i++) {
+    int x = map(i , 0, kyrieStats.lenth - 1, 50, 750);
+    line(x, 545, x, 555); // x- axis ticks
+    text(kyrieStats(i).season, x, 565);
+  }
+  
+    

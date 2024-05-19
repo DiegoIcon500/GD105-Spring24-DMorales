@@ -85,7 +85,11 @@ void draw(){
       currentSeason = kyrieStats.length - 1;
     }
   }
-  
+  println("Season: " + kyrieStats[currentSeason].season + 
+        ", Points: " + kyrieStats[currentSeason].points + 
+        ", Assists: " + kyrieStats[currentSeason].assists + 
+        ", Rebounds: " + kyrieStats[currentSeason].rebounds);
+
  
 }
   

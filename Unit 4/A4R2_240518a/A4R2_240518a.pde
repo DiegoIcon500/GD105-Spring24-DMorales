@@ -1,5 +1,4 @@
 // A4R2 
-// 
 // Kyrie Irving is my favorite NBA player, and as i'm making this code the playoffs
 // nba players have simple averaged stats for each season which should be good numbers
 

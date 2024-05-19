@@ -34,4 +34,11 @@ void draw(){
   text("Seasons", 400, 580);
   text("Stats", 6, 300);
   
+  // Y-axis labels and grid lines
+  for (int i = 0; i <= 30; i += 5) {
+    int y = map(i, 0, 30, 550, 50);
+    line(45, y, 55, y); // Y-axis ticks
+    text(i, 30, y);
+    stroke(200);
+    line(50, y, 750, y); // Horizontal grid lines
 }

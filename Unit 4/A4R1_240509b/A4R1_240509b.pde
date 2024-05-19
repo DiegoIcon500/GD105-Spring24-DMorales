@@ -1,22 +1,14 @@
 // Magnetic Poetry
 // Star/Steer, Ian Hamilton Finlay, 1965 (original poem). 
 // https://www.victoria-miro.com/news/570
-// 
+// I was able to identify the font used in the poem, however i couldn't find any
+// free verseions of the font :/
 
-String s1 = "star";
-String s2 = "star";
-String s3 = "steer";
+ArrayList<Word> words;
+Word selectedWord;
+int offsetX, offsetY;
 
-
-void setup(){
- size(400, 800);
- 
- 
-}
-
-
-void draw(){
- background(#E7E5DA);
- 
- 
-}
+void setup() {
+  size(300, 400);
+  words = new ArrayList<Word>();
+  

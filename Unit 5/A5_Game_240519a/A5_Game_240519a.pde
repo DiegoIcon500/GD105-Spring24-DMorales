@@ -20,12 +20,12 @@ void setup(){
   
   chill = new SoundFile(this, "721148__ncone__bgm-blues-guitar-loop.mp3");
   hit = new SoundFile(this, "332057__qubodup__fast-collision-reverb.mp3");
-  chill.play();
+  chill.play(); // BGM
 }
 
 
 void draw(){
-  
+  println(frameCount);
   background(50);
   
   if (!gameOver) {      // Check if the game is not over
@@ -38,8 +38,10 @@ void draw(){
       shapes.add(new Shape((int) random(width - shapeWidth), 0, shapeWidth, shapeHeight)); 
       //adding new shapes
       
-      
-  }
+  if (frameCount == 200){
+  save("GameA5.jpg");
+ }
+}
   
   for (int i = shapes.size() - 1; i >= 0; i--) {  
        Shape s = shapes.get(i);
@@ -47,7 +49,7 @@ void draw(){
        s.display();
 
       if (s.intersects(circle)) {   // Check if the shape intersects with the circle
-          hit.loop(1.0, 0.5);
+          hit.loop(1.0, 0.5); // collision noise at half volume cuz its loud
           gameOver = true;
       }
 

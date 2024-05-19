@@ -59,5 +59,16 @@ void draw(){
     else if (stat == 1)  stroke(0, 255, 0); // assist 
     else if (stat == 2) stroke(0, 0, 255); // rebounds
     
-   // beginShape();
-    
+    beginShape();
+    for (int i = 0; i <= currentSeason; i++) {
+      float y;
+      if (stat == 0) y = map(kyrieStats(i).points, 0, 50, 500, 50);
+      else if (stat == 1) y = map(kyrieStats(i).points, 0, 50, 500, 50);
+      else y = map(kyrieStats(i).points, 0, 50, 500, 50);
+      float x = map(i, 0, kyrieStats.length - 1, 50, 750);
+      vertex(x, y);
+    }
+   endShape();
+  }
+  
+  

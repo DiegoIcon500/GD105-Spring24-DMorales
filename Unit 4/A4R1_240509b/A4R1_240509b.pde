@@ -31,7 +31,14 @@ void setup() {
   words.add(new Word("steer", 207, 340, 28, 28));
 }
 void draw() {
-  background(255);
+  background(#e5ddd2);  // White background
+  fill(0);  // Black text
+  textAlign(CENTER, CENTER);  // Center the text
+
+  fill(#0c2c61);
+
+  translate(-89, 15);
+
   for (Word word : words) {
     word.draw();
   }

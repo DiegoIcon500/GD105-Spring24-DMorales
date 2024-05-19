@@ -24,7 +24,6 @@ void setup(){
   textAlign(CENTER, CENTER);
 }
   
-//
 
 void draw(){
   background(255);

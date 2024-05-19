@@ -3,6 +3,11 @@
 // Kyrie Irving is my favorite NBA player, and as i'm making this code the playoffs
 // nba players have simple averaged stats for each season which should be good numbers
 
+PlayerStats[] kyrieStats;
+int currentSeason = 0;
+int frameCount = 0;
+int maxFramesPerSeason = 60;
+
 void setup(){
   size(800, 600);
   kyrieStats = new PlayerStats[]{

@@ -58,18 +58,18 @@ void draw(){
   
   // lines for points, assist, rebounds
   noFill();
-  strokeWeight(4);
+  strokeWeight(2);
   for (int stat = 0; stat < 3; stat++) {
-    if (stat == 0) stroke(255, 0, 0); // points
-    else if (stat == 1)  stroke(0, 255, 0); // assist 
-    else if (stat == 2) stroke(0, 0, 255); // rebounds
+    if (stat == 0) stroke(255, 0, 0); // points - Red
+    else if (stat == 1)  stroke(0, 255, 0); // assist - Green
+    else if (stat == 2) stroke(0, 0, 255); // rebounds - Blue
     
     beginShape();
     for (int i = 0; i <= currentSeason; i++) {
       float y;
-      if (stat == 0) y = map(kyrieStats[i].points, 0, 50, 500, 50);
-      else if (stat == 1) y = map(kyrieStats[i].points, 0, 50, 500, 50);
-      else y = map(kyrieStats[i].points, 0, 50, 500, 50);
+      if (stat == 0) y = map(kyrieStats[i].points, 0, 30, 500, 50);
+      else if (stat == 1) y = map(kyrieStats[i].assists, 0, 10, 500, 50);
+      else y = map(kyrieStats[i].rebounds, 0, 10, 500, 50);
       float x = map(i, 0, kyrieStats.length - 1, 50, 750);
       vertex(x, y);
     }
@@ -85,5 +85,7 @@ void draw(){
       currentSeason = kyrieStats.length - 1;
     }
   }
+  
+ 
 }
   

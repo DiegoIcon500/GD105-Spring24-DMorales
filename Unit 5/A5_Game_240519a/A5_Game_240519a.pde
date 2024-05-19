@@ -18,7 +18,7 @@ void setup(){
   gameOver = false;
   score = 0;
   
-  chill = new SoundFile(this, "721148__ncone__bgm-blues-guitar-loop.mp3");
+  chill = new SoundFile(this, "584430__zhr__chill-background-music.mp3");
   hit = new SoundFile(this, "332057__qubodup__fast-collision-reverb.mp3");
   chill.play(); // BGM
 }
@@ -38,7 +38,7 @@ void draw(){
       shapes.add(new Shape((int) random(width - shapeWidth), 0, shapeWidth, shapeHeight)); 
       //adding new shapes
       
-  if (frameCount == 200){  // i'm confused
+  if (frameCount == 500){  // i'm confused
     save("GameA5.png");
  }
 }

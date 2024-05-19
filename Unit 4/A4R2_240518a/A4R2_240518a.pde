@@ -35,13 +35,13 @@ void draw(){
   
   // Labels for axes
   fill(0);
-  textSize(20);
+  textSize(15);
   text("Seasons", 400, 580);
   text("Stats", 6, 300);
   
   // Y-axis labels and grid lines
   for (int i = 0; i <= 30; i += 5) {
-    int y = map(i, 0, 30, 550, 50);
+    int y = (int) map(i, 0, 30, 550, 50); // CAST TO INT
     line(45, y, 55, y); // Y-axis ticks
     text(i, 30, y);
     stroke(200);
@@ -51,9 +51,9 @@ void draw(){
   
   //X-axis stuffs
   for (int i = 0; i < kyrieStats.length; i++) {
-    int x = map(i , 0, kyrieStats.length - 1, 50, 750);
+    int x = (int) map(i , 0, kyrieStats.length - 1, 50, 750); //cast int
     line(x, 545, x, 555); // x- axis ticks
-    text(kyrieStats(i).season, x, 565);
+    text(kyrieStats[i].season, x, 565);
   }
   
   // lines for points, assist, rebounds
@@ -67,9 +67,9 @@ void draw(){
     beginShape();
     for (int i = 0; i <= currentSeason; i++) {
       float y;
-      if (stat == 0) y = map(kyrieStats(i).points, 0, 50, 500, 50);
-      else if (stat == 1) y = map(kyrieStats(i).points, 0, 50, 500, 50);
-      else y = map(kyrieStats(i).points, 0, 50, 500, 50);
+      if (stat == 0) y = map(kyrieStats[i].points, 0, 50, 500, 50);
+      else if (stat == 1) y = map(kyrieStats[i].points, 0, 50, 500, 50);
+      else y = map(kyrieStats[i].points, 0, 50, 500, 50);
       float x = map(i, 0, kyrieStats.length - 1, 50, 750);
       vertex(x, y);
     }
